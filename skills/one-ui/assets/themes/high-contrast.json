@@ -1,0 +1,22 @@
+{
+  "id": "high-contrast",
+  "color": {
+    "light": {
+      "textSecondary": "#191919",
+      "textMuted": "#222222",
+      "placeholder": "#222222",
+      "borderControl": "#000000",
+      "borderStrong": "#000000",
+      "borderSubtle": "#555555"
+    },
+    "dark": {
+      "textSecondary": "#ffffff",
+      "textMuted": "#eeeeee",
+      "placeholder": "#eeeeee",
+      "borderControl": "#ffffff",
+      "borderStrong": "#ffffff",
+      "borderSubtle": "#aaaaaa",
+      "focus": "#ffffff"
+    }
+  }
+}

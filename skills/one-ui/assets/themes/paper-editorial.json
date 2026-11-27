@@ -1,0 +1,22 @@
+{
+  "id": "paper-editorial",
+  "color": {
+    "light": {
+      "canvas": "#faf7ef",
+      "surface": "#fffdf8",
+      "surfaceSubtle": "#f5f0e7",
+      "surfaceRaised": "#ebe5d9",
+      "textPrimary": "#29251f",
+      "textSecondary": "#5d564a",
+      "borderControl": "#776f61"
+    },
+    "dark": {
+      "canvas": "#161410",
+      "surface": "#1c1915",
+      "surfaceSubtle": "#211e19",
+      "surfaceRaised": "#2b2720",
+      "textPrimary": "#f8f2e5",
+      "borderControl": "#928775"
+    }
+  }
+}

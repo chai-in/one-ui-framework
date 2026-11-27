@@ -1,0 +1,71 @@
+/* SPDX-License-Identifier: AGPL-3.0-only */
+@layer one.base {
+  /* Keep the filter, query and result count together when controls wrap. */
+  .one-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: end;
+    gap: var(--one-space-4);
+  }
+
+  .one-toolbar > * {
+    min-inline-size: 0;
+    max-inline-size: 100%;
+  }
+
+  /* Empty tracks keep a single matching item at the same scale as its peers. */
+  .one-collection {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, var(--one-collection-min, 16rem)), 1fr));
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .one-collection > * {
+    min-inline-size: 0;
+    overflow-wrap: anywhere;
+  }
+
+  /* Keep a wide table local to its region so the surrounding page can reflow. */
+  .one-table-region {
+    min-inline-size: 0;
+    max-inline-size: 100%;
+    overflow-x: auto;
+  }
+
+  .one-table-region:focus-visible {
+    outline: var(--one-focus-width) solid var(--one-color-focus);
+    outline-offset: var(--one-focus-offset);
+  }
+
+  .one-table {
+    inline-size: 100%;
+    border-collapse: collapse;
+    font-size: var(--one-type-control-size);
+    line-height: var(--one-type-control-line);
+    color: var(--one-color-text-primary);
+  }
+
+  .one-table caption {
+    text-align: start;
+    padding-block-end: var(--one-space-2);
+    color: var(--one-color-text-secondary);
+  }
+
+  .one-table :is(th, td) {
+    padding: var(--one-cell-padding-block) var(--one-space-3);
+    border-block-end: 1px solid var(--one-color-border-subtle);
+    text-align: start;
+    vertical-align: baseline;
+  }
+
+  .one-table th {
+    font-weight: var(--one-type-control-weight);
+  }
+
+  .one-table [data-one-numeric] {
+    text-align: end;
+    font-variant-numeric: tabular-nums;
+  }
+}

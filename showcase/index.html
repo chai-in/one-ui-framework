@@ -1,0 +1,197 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: AGPL-3.0-only -->
+<html lang="en" data-one-theme="system" data-one-preset="default" data-one-motion="tactile" data-one-density="comfortable" data-one-action-border="borderless-filled">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>One UI playground</title>
+  <link rel="preload" href="./fonts/InterVariable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../platforms/web/one-tokens.css">
+  <link rel="stylesheet" href="../platforms/web/one-primitives.css">
+  <link rel="stylesheet" href="../platforms/web/one-moments.css">
+  <link rel="stylesheet" href="../platforms/web/one-layout.css">
+  <link rel="stylesheet" href="./showcase.css">
+  <script type="module" src="./showcase.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="masthead wrap">
+    <a class="wordmark" href="#main"><span class="brand-mark" aria-hidden="true"></span>One UI</a>
+    <nav aria-label="Showcase">
+      <a href="#controls">Controls</a>
+      <a href="#moments">Moments</a>
+      <a href="#contrast">Contrast</a>
+    </nav>
+    <a class="source-link" href="https://github.com/chai-in/one-ui-framework">GitHub</a>
+  </header>
+  <main id="main" class="wrap" tabindex="-1">
+    <header class="intro">
+      <div class="intro-copy">
+        <h1>One UI playground</h1>
+        <p>Try the controls, compare spring responses, and copy an example into your project.</p>
+        <a class="one-btn browse" data-one-role="action" href="#moments">Browse moments</a>
+      </div>
+      <figure class="spring-study">
+        <figcaption>
+          <h2>Spring response</h2>
+          <label class="labeled-inline" for="study-preset">Preset
+            <select id="study-preset">
+              <option value="tactile">Tactile</option>
+              <option value="snappy">Snappy</option>
+              <option value="gentle">Gentle</option>
+              <option value="elastic">Elastic</option>
+              <option value="detent">Detent</option>
+            </select>
+          </label>
+        </figcaption>
+        <div class="chart" aria-hidden="true">
+          <span class="chart-target">100%</span>
+          <svg viewBox="0 0 320 120" preserveAspectRatio="none">
+            <path class="chart-rule" d="M1 35H319 M1 115H319"></path>
+            <polyline id="curve" points=""></polyline>
+          </svg>
+          <span class="chart-origin">0%</span>
+          <div class="chart-scale"><span>0 ms</span><span id="chart-duration"></span></div>
+        </div>
+        <dl class="spring-readout" aria-live="polite" aria-atomic="true">
+          <div><dt>Settle time</dt><dd id="settle"></dd></div>
+          <div><dt>Peak above target</dt><dd id="overshoot"></dd></div>
+        </dl>
+        <details class="spring-table">
+          <summary>View displacement data</summary>
+          <table class="one-table">
+            <caption>Displacement as a percentage of the target</caption>
+            <thead><tr><th scope="col" data-one-numeric>Time (ms)</th><th scope="col" data-one-numeric>Displacement (%)</th></tr></thead>
+            <tbody id="chart-data"></tbody>
+          </table>
+        </details>
+      </figure>
+    </header>
+    <details class="settings">
+      <summary>Preview settings</summary>
+      <div id="preferences" class="preferences">
+        <label>Appearance<select name="theme"><option value="light">Light</option><option value="dark">Dark</option><option value="system" selected>System</option></select></label>
+        <label>Preset<select name="preset"><option value="default">Default</option><option value="obsidian-studio">Obsidian Studio</option><option value="paper-editorial">Paper Editorial</option><option value="high-contrast">High Contrast</option></select></label>
+        <label>Motion<select name="motion"><option value="tactile">Tactile</option><option value="calm">Calm</option><option value="reduced">Reduced</option></select></label>
+        <label>Density<select name="density"><option value="comfortable">Comfortable</option><option value="compact">Compact</option></select></label>
+        <label>Action borders<select name="action-border"><option value="borderless-filled">Borderless</option><option value="bordered">Bordered</option></select></label>
+      </div>
+    </details>
+    <noscript>Enable JavaScript to try the controls and load the moment catalog.</noscript>
+    <section id="controls" tabindex="-1" aria-labelledby="controls-title">
+      <div class="section-head">
+        <h2 id="controls-title">Semantic controls</h2>
+        <p>Work with a draft and reply to an invitation. Changes stay in this page.</p>
+      </div>
+      <div class="control-examples">
+        <div class="draft-example">
+          <div class="example-heading"><h3>Edit a draft</h3><one-badge id="draft-status" label="Saved"></one-badge></div>
+          <div id="draft-editor">
+            <one-field id="draft-name" label="Draft title" required value="Motion study"></one-field>
+            <one-tabs options="Details,Activity" label="Draft information">
+              <div slot="panel-0" class="preview-tools">
+                <one-switch id="draft-switch" label="Show preview title" checked></one-switch>
+                <one-dialog label="Draft preview" trigger-label="Preview draft"><p id="draft-preview">Motion study</p></one-dialog>
+                <one-popover label="Draft actions" trigger-label="Action guide"><p>Save keeps the current title. Discard restores the last saved title.</p></one-popover>
+              </div>
+              <p slot="panel-1" id="draft-activity">Motion study is the saved draft.</p>
+            </one-tabs>
+            <div class="draft-actions">
+              <one-choice-group label="Draft changes">
+                <one-button id="draft-save" data-one-role="accept" label="Save changes" value="saved"></one-button>
+                <one-button data-one-role="destructive" label="Discard changes" value="discarded"></one-button>
+              </one-choice-group>
+              <one-button id="draft-delete" data-one-role="neutral" label="Delete draft…" value="confirm-delete"></one-button>
+            </div>
+          </div>
+          <div id="draft-empty" hidden>
+            <one-button id="draft-create" data-one-role="action" label="Create draft" value="created"></one-button>
+          </div>
+          <p class="caption outcome" id="draft-outcome" role="status"></p>
+        </div>
+        <div class="invitation">
+          <h3>Studio review</h3>
+          <p>Editorial invited you to review the motion study.</p>
+          <one-choice-group id="invitation-actions" label="Studio review invitation">
+            <one-button id="invitation-accept" data-one-role="accept" label="Accept" value="accepted"></one-button>
+            <one-button data-one-role="decline" label="Decline" value="declined"></one-button>
+          </one-choice-group>
+          <button type="button" class="one-btn" data-one-role="neutral" id="invitation-reset" hidden>Reset invitation</button>
+          <p class="caption outcome" id="invitation-outcome" role="status"></p>
+        </div>
+      </div>
+    </section>
+    <section id="moments" tabindex="-1" aria-labelledby="moments-title">
+      <div class="section-head">
+        <h2 id="moments-title">Moment catalog</h2>
+        <p>Try an interaction, then open its code for HTML, React, or SwiftUI.</p>
+      </div>
+      <div class="one-toolbar catalog-tools" role="search" aria-label="Find moments">
+        <label class="search-field" for="search">Search moments
+          <input class="one-field" type="search" id="search">
+        </label>
+        <label for="category-filter">Interaction
+          <select id="category-filter"><option value="">All interactions</option></select>
+        </label>
+        <p class="counter" role="status" id="result-count"></p>
+      </div>
+      <div class="event-line"><span>Latest event</span><code id="event">Try a moment to see its event.</code></div>
+      <ul class="one-collection moment-grid" id="moment-grid" aria-label="Moment catalog" role="list"></ul>
+      <div id="empty" hidden><p>Try a different name or clear the category filter.</p><button type="button" class="one-btn" data-one-role="neutral" id="reset-filters">Clear filters</button></div>
+    </section>
+    <section id="contrast" tabindex="-1" aria-labelledby="contrast-title">
+      <div class="section-head">
+        <h2 id="contrast-title">Contrast tester</h2>
+        <p>Check two colors against WCAG 2.2 AA contrast thresholds.</p>
+      </div>
+      <div class="tester">
+        <div class="palette">
+          <label for="test-pair" class="test-pair">Preset pair
+            <select id="test-pair">
+              <option value="action-label">Action label on fill</option>
+              <option value="action-canvas">Action fill on canvas</option>
+              <option value="body-canvas">Body text on canvas</option>
+            </select>
+          </label>
+          <label for="foreground-color">Foreground<input id="foreground-color" type="color"><code id="foreground-hex" aria-hidden="true"></code></label>
+          <label for="background-color">Background<input id="background-color" type="color"><code id="background-hex" aria-hidden="true"></code></label>
+          <button type="button" id="theme-colors" class="one-btn" data-one-role="neutral">Restore preset colors</button>
+        </div>
+        <div class="sample" id="color-sample" aria-hidden="true"><span>Aa</span><i></i></div>
+        <div class="ratio-result" role="status" aria-atomic="true">
+          <p class="caption">Contrast ratio</p><strong id="ratio"></strong>
+          <div id="text-result"></div><div id="ui-result"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="wrap"><span>One UI · v1.0.0</span><a href="../LICENSE">AGPL-3.0-only</a></footer>
+  <dialog id="delete-confirmation" class="one-dialog" aria-labelledby="delete-title" aria-describedby="delete-description">
+    <div class="dialog-body">
+      <h2 id="delete-title">Delete draft?</h2>
+      <p id="delete-description">This removes the current draft and its saved title from the playground.</p>
+      <form method="dialog" class="dialog-actions">
+        <button class="one-btn" data-one-role="neutral" value="cancel" autofocus>Cancel</button>
+        <button class="one-btn" data-one-role="destructive" value="delete">Delete draft</button>
+      </form>
+    </div>
+  </dialog>
+  <dialog id="inspector" class="one-dialog" aria-labelledby="snippet-title">
+    <div class="dialog-body">
+      <div class="dialog-heading"><h2 id="snippet-title">Component code</h2><form method="dialog"><button class="one-btn" data-one-role="neutral" autofocus>Close</button></form></div>
+      <p id="snippet-pattern"></p>
+      <label class="format-label" for="format">Platform<select id="format"><option value="html">HTML</option><option value="react">React</option><option value="swift">SwiftUI</option></select></label>
+      <p id="snippet-setup" class="caption"></p>
+      <pre tabindex="0" aria-label="Example code"><code id="snippet"></code></pre>
+      <div class="copy-line"><button type="button" class="one-btn" data-one-role="neutral" id="copy">Copy code</button><span role="status" id="copy-status"></span></div>
+    </div>
+  </dialog>
+  <template id="tile-template">
+    <li class="tile">
+      <header><h3></h3><span class="caption"></span></header>
+      <div class="stage"></div>
+      <button type="button" class="code-button" aria-haspopup="dialog">View code</button>
+    </li>
+  </template>
+</body>
+</html>

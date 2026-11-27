@@ -1,0 +1,751 @@
+preset,pair,foreground,background,threshold,ratio,result
+canonical,Action / Oat: default label,#000000,#DFD49A,4.5,14.021607238425982,pass
+canonical,Action / Oat: default essential icon,#000000,#DFD49A,3,14.021607238425982,pass
+canonical,Action / Oat: hover label,#000000,#E7DFAF,4.5,15.57188440623289,pass
+canonical,Action / Oat: hover essential icon,#000000,#E7DFAF,3,15.57188440623289,pass
+canonical,Action / Oat: pressed label,#000000,#CFC184,4.5,11.614253898437852,pass
+canonical,Action / Oat: pressed essential icon,#000000,#CFC184,3,11.614253898437852,pass
+canonical,Action / Oat: loading label,#000000,#DFD49A,4.5,14.021607238425982,pass
+canonical,Action / Oat: loading progress indicator,#000000,#DFD49A,3,14.021607238425982,pass
+canonical,Accept / Evergreen: default label,#FFFFFF,#3F7057,4.5,5.727307367816484,pass
+canonical,Accept / Evergreen: default essential icon,#FFFFFF,#3F7057,3,5.727307367816484,pass
+canonical,Accept / Evergreen: hover label,#FFFFFF,#4A7A62,4.5,4.939606243085638,pass
+canonical,Accept / Evergreen: hover essential icon,#FFFFFF,#4A7A62,3,4.939606243085638,pass
+canonical,Accept / Evergreen: pressed label,#FFFFFF,#345E49,4.5,7.385778508751097,pass
+canonical,Accept / Evergreen: pressed essential icon,#FFFFFF,#345E49,3,7.385778508751097,pass
+canonical,Accept / Evergreen: loading label,#FFFFFF,#3F7057,4.5,5.727307367816484,pass
+canonical,Accept / Evergreen: loading progress indicator,#FFFFFF,#3F7057,3,5.727307367816484,pass
+canonical,Decline / Soft red: default label,#000000,#D99090,4.5,8.342369590246351,pass
+canonical,Decline / Soft red: default essential icon,#000000,#D99090,3,8.342369590246351,pass
+canonical,Decline / Soft red: hover label,#000000,#E1A4A4,4.5,10.047761297838784,pass
+canonical,Decline / Soft red: hover essential icon,#000000,#E1A4A4,3,10.047761297838784,pass
+canonical,Decline / Soft red: pressed label,#000000,#CB7F7F,4.5,6.881511971879262,pass
+canonical,Decline / Soft red: pressed essential icon,#000000,#CB7F7F,3,6.881511971879262,pass
+canonical,Decline / Soft red: loading label,#000000,#D99090,4.5,8.342369590246351,pass
+canonical,Decline / Soft red: loading progress indicator,#000000,#D99090,3,8.342369590246351,pass
+canonical,Destructive / Muted red: default label,#FFFFFF,#AD4648,4.5,5.60525130123578,pass
+canonical,Destructive / Muted red: default essential icon,#FFFFFF,#AD4648,3,5.60525130123578,pass
+canonical,Destructive / Muted red: hover label,#FFFFFF,#B94F51,4.5,4.883645227240549,pass
+canonical,Destructive / Muted red: hover essential icon,#FFFFFF,#B94F51,3,4.883645227240549,pass
+canonical,Destructive / Muted red: pressed label,#FFFFFF,#983D40,4.5,6.825693400406773,pass
+canonical,Destructive / Muted red: pressed essential icon,#FFFFFF,#983D40,3,6.825693400406773,pass
+canonical,Destructive / Muted red: loading label,#FFFFFF,#AD4648,4.5,5.60525130123578,pass
+canonical,Destructive / Muted red: loading progress indicator,#FFFFFF,#AD4648,3,5.60525130123578,pass
+canonical,light Primary text: canvas,#000000,#FFFFFF,4.5,21.0,pass
+canonical,light Primary text: surface,#000000,#FFFFFF,4.5,21.0,pass
+canonical,light Primary text: subtle,#000000,#F4F4F4,4.5,19.093223487822993,pass
+canonical,light Primary text: raised,#000000,#EAEAEA,4.5,17.455715087925668,pass
+canonical,light Secondary text: canvas,#595959,#FFFFFF,4.5,7.004729208035935,pass
+canonical,light Secondary text: surface,#595959,#FFFFFF,4.5,7.004729208035935,pass
+canonical,light Secondary text: subtle,#595959,#F4F4F4,4.5,6.36870763051007,pass
+canonical,light Secondary text: raised,#595959,#EAEAEA,4.5,5.82250272969269,pass
+canonical,light Muted text: canvas,#595959,#FFFFFF,4.5,7.004729208035935,pass
+canonical,light Muted text: surface,#595959,#FFFFFF,4.5,7.004729208035935,pass
+canonical,light Muted text: subtle,#595959,#F4F4F4,4.5,6.36870763051007,pass
+canonical,light Muted text: raised,#595959,#EAEAEA,4.5,5.82250272969269,pass
+canonical,light Placeholder: canvas,#595959,#FFFFFF,4.5,7.004729208035935,pass
+canonical,light Placeholder: surface,#595959,#FFFFFF,4.5,7.004729208035935,pass
+canonical,light Placeholder: subtle,#595959,#F4F4F4,4.5,6.36870763051007,pass
+canonical,light Placeholder: raised,#595959,#EAEAEA,4.5,5.82250272969269,pass
+canonical,light Control border: canvas,#828282,#FFFFFF,3,3.8429449545037673,pass
+canonical,light Control border: surface,#828282,#FFFFFF,3,3.8429449545037673,pass
+canonical,light Control border: subtle,#828282,#F4F4F4,3,3.494009850844866,pass
+canonical,light Control border: raised,#828282,#EAEAEA,3,3.194350105923773,pass
+canonical,light Strong/action border: canvas,#595959,#FFFFFF,3,7.004729208035935,pass
+canonical,light Strong/action border: surface,#595959,#FFFFFF,3,7.004729208035935,pass
+canonical,light Strong/action border: subtle,#595959,#F4F4F4,3,6.36870763051007,pass
+canonical,light Strong/action border: raised,#595959,#EAEAEA,3,5.82250272969269,pass
+canonical,light higher-contrast edge: canvas,#000000,#FFFFFF,3,21.0,pass
+canonical,light higher-contrast edge: surface,#000000,#FFFFFF,3,21.0,pass
+canonical,light higher-contrast edge: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+canonical,light higher-contrast edge: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+canonical,light normal focus: canvas,#000000,#FFFFFF,3,21.0,pass
+canonical,light normal focus: surface,#000000,#FFFFFF,3,21.0,pass
+canonical,light normal focus: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+canonical,light normal focus: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+canonical,light normal focus: separating gap,#000000,#FFFFFF,3,21.0,pass
+canonical,light higher-contrast focus: canvas,#000000,#FFFFFF,3,21.0,pass
+canonical,light higher-contrast focus: surface,#000000,#FFFFFF,3,21.0,pass
+canonical,light higher-contrast focus: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+canonical,light higher-contrast focus: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+canonical,light higher-contrast focus: separating gap,#000000,#FFFFFF,3,21.0,pass
+canonical,light disabled: label,#595959,#EAEAEA,4.5,5.82250272969269,pass
+canonical,light selected: label,#000000,#FBF5CE,4.5,19.054055317434308,pass
+canonical,light selected: marker,#000000,#FBF5CE,3,19.054055317434308,pass
+canonical,light neutral action: default label,#000000,#FFFFFF,4.5,21.0,pass
+canonical,light neutral action: hover label,#000000,#F4F4F4,4.5,19.093223487822993,pass
+canonical,light neutral action: pressed label,#000000,#EAEAEA,4.5,17.455715087925668,pass
+canonical,dark Primary text: canvas,#FFFFFF,#000000,4.5,21.0,pass
+canonical,dark Primary text: surface,#FFFFFF,#191919,4.5,17.581691183046004,pass
+canonical,dark Primary text: subtle,#FFFFFF,#191919,4.5,17.581691183046004,pass
+canonical,dark Primary text: raised,#FFFFFF,#212121,4.5,16.102191704447957,pass
+canonical,dark Secondary text: canvas,#C8C8C8,#000000,4.5,12.551608808593013,pass
+canonical,dark Secondary text: surface,#C8C8C8,#191919,4.5,10.508500472527729,pass
+canonical,dark Secondary text: subtle,#C8C8C8,#191919,4.5,10.508500472527729,pass
+canonical,dark Secondary text: raised,#C8C8C8,#212121,4.5,9.624210058819157,pass
+canonical,dark Muted text: canvas,#959595,#000000,4.5,7.010875888315529,pass
+canonical,dark Muted text: surface,#959595,#191919,4.5,5.869669275763188,pass
+canonical,dark Muted text: subtle,#959595,#191919,4.5,5.869669275763188,pass
+canonical,dark Muted text: raised,#959595,#212121,4.5,5.375736550940406,pass
+canonical,dark Placeholder: canvas,#959595,#000000,4.5,7.010875888315529,pass
+canonical,dark Placeholder: surface,#959595,#191919,4.5,5.869669275763188,pass
+canonical,dark Placeholder: subtle,#959595,#191919,4.5,5.869669275763188,pass
+canonical,dark Placeholder: raised,#959595,#212121,4.5,5.375736550940406,pass
+canonical,dark Control border: canvas,#828282,#000000,3,5.46455914633617,pass
+canonical,dark Control border: surface,#828282,#191919,3,4.575056731541526,pass
+canonical,dark Control border: subtle,#828282,#191919,3,4.575056731541526,pass
+canonical,dark Control border: raised,#828282,#212121,3,4.190065664504738,pass
+canonical,dark Strong/action border: canvas,#959595,#000000,3,7.010875888315529,pass
+canonical,dark Strong/action border: surface,#959595,#191919,3,5.869669275763188,pass
+canonical,dark Strong/action border: subtle,#959595,#191919,3,5.869669275763188,pass
+canonical,dark Strong/action border: raised,#959595,#212121,3,5.375736550940406,pass
+canonical,dark higher-contrast edge: canvas,#FFFFFF,#000000,3,21.0,pass
+canonical,dark higher-contrast edge: surface,#FFFFFF,#191919,3,17.581691183046004,pass
+canonical,dark higher-contrast edge: subtle,#FFFFFF,#191919,3,17.581691183046004,pass
+canonical,dark higher-contrast edge: raised,#FFFFFF,#212121,3,16.102191704447957,pass
+canonical,dark normal focus: canvas,#DFD49A,#000000,3,14.021607238425982,pass
+canonical,dark normal focus: surface,#DFD49A,#191919,3,11.739217540760388,pass
+canonical,dark normal focus: subtle,#DFD49A,#191919,3,11.739217540760388,pass
+canonical,dark normal focus: raised,#DFD49A,#212121,3,10.75136227417192,pass
+canonical,dark normal focus: separating gap,#DFD49A,#000000,3,14.021607238425982,pass
+canonical,dark higher-contrast focus: canvas,#DFD49A,#000000,3,14.021607238425982,pass
+canonical,dark higher-contrast focus: surface,#DFD49A,#191919,3,11.739217540760388,pass
+canonical,dark higher-contrast focus: subtle,#DFD49A,#191919,3,11.739217540760388,pass
+canonical,dark higher-contrast focus: raised,#DFD49A,#212121,3,10.75136227417192,pass
+canonical,dark higher-contrast focus: separating gap,#DFD49A,#000000,3,14.021607238425982,pass
+canonical,dark disabled: label,#B8B8B8,#212121,4.5,8.117347677450482,pass
+canonical,dark selected: label,#FFFFFF,#464029,4.5,10.366297337903037,pass
+canonical,dark selected: marker,#FFFFFF,#464029,3,10.366297337903037,pass
+canonical,dark neutral action: default label,#FFFFFF,#191919,4.5,17.581691183046004,pass
+canonical,dark neutral action: hover label,#FFFFFF,#212121,4.5,16.102191704447957,pass
+canonical,dark neutral action: pressed label,#FFFFFF,#323232,4.5,12.82113382786086,pass
+canonical,light Success: status text,#166534,#F0FDF4,4.5,6.811651629293788,pass
+canonical,light Success: status icon,#166534,#F0FDF4,3,6.811651629293788,pass
+canonical,dark Success: status text,#86EFAC,#143322,4.5,9.798372884623275,pass
+canonical,dark Success: status icon,#86EFAC,#143322,3,9.798372884623275,pass
+canonical,light Warning: status text,#854D0E,#FFFBEA,4.5,6.602820957010432,pass
+canonical,light Warning: status icon,#854D0E,#FFFBEA,3,6.602820957010432,pass
+canonical,dark Warning: status text,#FDE68A,#332B12,4.5,11.278744711536344,pass
+canonical,dark Warning: status icon,#FDE68A,#332B12,3,11.278744711536344,pass
+canonical,light Danger/error: status text,#B91C1C,#FFF1F2,4.5,5.889675463818466,pass
+canonical,light Danger/error: status icon,#B91C1C,#FFF1F2,3,5.889675463818466,pass
+canonical,dark Danger/error: status text,#FF6666,#3B1717,4.5,5.560189091999312,pass
+canonical,dark Danger/error: status icon,#FF6666,#3B1717,3,5.560189091999312,pass
+canonical,light Information: status text,#1D4ED8,#EFF6FF,4.5,6.157973971775643,pass
+canonical,light Information: status icon,#1D4ED8,#EFF6FF,3,6.157973971775643,pass
+canonical,dark Information: status text,#93C5FD,#17283B,4.5,8.299810978536046,pass
+canonical,dark Information: status icon,#93C5FD,#17283B,3,8.299810978536046,pass
+canonical,informational Oat notification: label,#000000,#DFD49A,4.5,14.021607238425982,pass
+canonical,informational Oat notification: icon,#000000,#DFD49A,3,14.021607238425982,pass
+canonical,light Blue category: label,#000000,#5AB8FF,4.5,9.734927748164832,pass
+canonical,light Blue category: icon,#000000,#5AB8FF,3,9.734927748164832,pass
+canonical,dark Blue category: label,#000000,#5AB8FF,4.5,9.734927748164832,pass
+canonical,dark Blue category: icon,#000000,#5AB8FF,3,9.734927748164832,pass
+canonical,light Lavender category: label,#000000,#9D8AFF,4.5,7.513011248493646,pass
+canonical,light Lavender category: icon,#000000,#9D8AFF,3,7.513011248493646,pass
+canonical,dark Lavender category: label,#000000,#9D8AFF,4.5,7.513011248493646,pass
+canonical,dark Lavender category: icon,#000000,#9D8AFF,3,7.513011248493646,pass
+canonical,light Green category: label,#000000,#30B588,4.5,8.090739778852315,pass
+canonical,light Green category: icon,#000000,#30B588,3,8.090739778852315,pass
+canonical,dark Green category: label,#000000,#30B588,4.5,8.090739778852315,pass
+canonical,dark Green category: icon,#000000,#30B588,3,8.090739778852315,pass
+default,Action / Oat: default label,#000000,#DFD49A,4.5,14.021607238425982,pass
+default,Action / Oat: default essential icon,#000000,#DFD49A,3,14.021607238425982,pass
+default,Action / Oat: hover label,#000000,#E7DFAF,4.5,15.57188440623289,pass
+default,Action / Oat: hover essential icon,#000000,#E7DFAF,3,15.57188440623289,pass
+default,Action / Oat: pressed label,#000000,#CFC184,4.5,11.614253898437852,pass
+default,Action / Oat: pressed essential icon,#000000,#CFC184,3,11.614253898437852,pass
+default,Action / Oat: loading label,#000000,#DFD49A,4.5,14.021607238425982,pass
+default,Action / Oat: loading progress indicator,#000000,#DFD49A,3,14.021607238425982,pass
+default,Accept / Evergreen: default label,#FFFFFF,#3F7057,4.5,5.727307367816484,pass
+default,Accept / Evergreen: default essential icon,#FFFFFF,#3F7057,3,5.727307367816484,pass
+default,Accept / Evergreen: hover label,#FFFFFF,#4A7A62,4.5,4.939606243085638,pass
+default,Accept / Evergreen: hover essential icon,#FFFFFF,#4A7A62,3,4.939606243085638,pass
+default,Accept / Evergreen: pressed label,#FFFFFF,#345E49,4.5,7.385778508751097,pass
+default,Accept / Evergreen: pressed essential icon,#FFFFFF,#345E49,3,7.385778508751097,pass
+default,Accept / Evergreen: loading label,#FFFFFF,#3F7057,4.5,5.727307367816484,pass
+default,Accept / Evergreen: loading progress indicator,#FFFFFF,#3F7057,3,5.727307367816484,pass
+default,Decline / Soft red: default label,#000000,#D99090,4.5,8.342369590246351,pass
+default,Decline / Soft red: default essential icon,#000000,#D99090,3,8.342369590246351,pass
+default,Decline / Soft red: hover label,#000000,#E1A4A4,4.5,10.047761297838784,pass
+default,Decline / Soft red: hover essential icon,#000000,#E1A4A4,3,10.047761297838784,pass
+default,Decline / Soft red: pressed label,#000000,#CB7F7F,4.5,6.881511971879262,pass
+default,Decline / Soft red: pressed essential icon,#000000,#CB7F7F,3,6.881511971879262,pass
+default,Decline / Soft red: loading label,#000000,#D99090,4.5,8.342369590246351,pass
+default,Decline / Soft red: loading progress indicator,#000000,#D99090,3,8.342369590246351,pass
+default,Destructive / Muted red: default label,#FFFFFF,#AD4648,4.5,5.60525130123578,pass
+default,Destructive / Muted red: default essential icon,#FFFFFF,#AD4648,3,5.60525130123578,pass
+default,Destructive / Muted red: hover label,#FFFFFF,#B94F51,4.5,4.883645227240549,pass
+default,Destructive / Muted red: hover essential icon,#FFFFFF,#B94F51,3,4.883645227240549,pass
+default,Destructive / Muted red: pressed label,#FFFFFF,#983D40,4.5,6.825693400406773,pass
+default,Destructive / Muted red: pressed essential icon,#FFFFFF,#983D40,3,6.825693400406773,pass
+default,Destructive / Muted red: loading label,#FFFFFF,#AD4648,4.5,5.60525130123578,pass
+default,Destructive / Muted red: loading progress indicator,#FFFFFF,#AD4648,3,5.60525130123578,pass
+default,light Primary text: canvas,#000000,#FFFFFF,4.5,21.0,pass
+default,light Primary text: surface,#000000,#FFFFFF,4.5,21.0,pass
+default,light Primary text: subtle,#000000,#F4F4F4,4.5,19.093223487822993,pass
+default,light Primary text: raised,#000000,#EAEAEA,4.5,17.455715087925668,pass
+default,light Secondary text: canvas,#595959,#FFFFFF,4.5,7.004729208035935,pass
+default,light Secondary text: surface,#595959,#FFFFFF,4.5,7.004729208035935,pass
+default,light Secondary text: subtle,#595959,#F4F4F4,4.5,6.36870763051007,pass
+default,light Secondary text: raised,#595959,#EAEAEA,4.5,5.82250272969269,pass
+default,light Muted text: canvas,#595959,#FFFFFF,4.5,7.004729208035935,pass
+default,light Muted text: surface,#595959,#FFFFFF,4.5,7.004729208035935,pass
+default,light Muted text: subtle,#595959,#F4F4F4,4.5,6.36870763051007,pass
+default,light Muted text: raised,#595959,#EAEAEA,4.5,5.82250272969269,pass
+default,light Placeholder: canvas,#595959,#FFFFFF,4.5,7.004729208035935,pass
+default,light Placeholder: surface,#595959,#FFFFFF,4.5,7.004729208035935,pass
+default,light Placeholder: subtle,#595959,#F4F4F4,4.5,6.36870763051007,pass
+default,light Placeholder: raised,#595959,#EAEAEA,4.5,5.82250272969269,pass
+default,light Control border: canvas,#828282,#FFFFFF,3,3.8429449545037673,pass
+default,light Control border: surface,#828282,#FFFFFF,3,3.8429449545037673,pass
+default,light Control border: subtle,#828282,#F4F4F4,3,3.494009850844866,pass
+default,light Control border: raised,#828282,#EAEAEA,3,3.194350105923773,pass
+default,light Strong/action border: canvas,#595959,#FFFFFF,3,7.004729208035935,pass
+default,light Strong/action border: surface,#595959,#FFFFFF,3,7.004729208035935,pass
+default,light Strong/action border: subtle,#595959,#F4F4F4,3,6.36870763051007,pass
+default,light Strong/action border: raised,#595959,#EAEAEA,3,5.82250272969269,pass
+default,light higher-contrast edge: canvas,#000000,#FFFFFF,3,21.0,pass
+default,light higher-contrast edge: surface,#000000,#FFFFFF,3,21.0,pass
+default,light higher-contrast edge: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+default,light higher-contrast edge: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+default,light normal focus: canvas,#000000,#FFFFFF,3,21.0,pass
+default,light normal focus: surface,#000000,#FFFFFF,3,21.0,pass
+default,light normal focus: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+default,light normal focus: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+default,light normal focus: separating gap,#000000,#FFFFFF,3,21.0,pass
+default,light higher-contrast focus: canvas,#000000,#FFFFFF,3,21.0,pass
+default,light higher-contrast focus: surface,#000000,#FFFFFF,3,21.0,pass
+default,light higher-contrast focus: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+default,light higher-contrast focus: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+default,light higher-contrast focus: separating gap,#000000,#FFFFFF,3,21.0,pass
+default,light disabled: label,#595959,#EAEAEA,4.5,5.82250272969269,pass
+default,light selected: label,#000000,#FBF5CE,4.5,19.054055317434308,pass
+default,light selected: marker,#000000,#FBF5CE,3,19.054055317434308,pass
+default,light neutral action: default label,#000000,#FFFFFF,4.5,21.0,pass
+default,light neutral action: hover label,#000000,#F4F4F4,4.5,19.093223487822993,pass
+default,light neutral action: pressed label,#000000,#EAEAEA,4.5,17.455715087925668,pass
+default,dark Primary text: canvas,#FFFFFF,#000000,4.5,21.0,pass
+default,dark Primary text: surface,#FFFFFF,#191919,4.5,17.581691183046004,pass
+default,dark Primary text: subtle,#FFFFFF,#191919,4.5,17.581691183046004,pass
+default,dark Primary text: raised,#FFFFFF,#212121,4.5,16.102191704447957,pass
+default,dark Secondary text: canvas,#C8C8C8,#000000,4.5,12.551608808593013,pass
+default,dark Secondary text: surface,#C8C8C8,#191919,4.5,10.508500472527729,pass
+default,dark Secondary text: subtle,#C8C8C8,#191919,4.5,10.508500472527729,pass
+default,dark Secondary text: raised,#C8C8C8,#212121,4.5,9.624210058819157,pass
+default,dark Muted text: canvas,#959595,#000000,4.5,7.010875888315529,pass
+default,dark Muted text: surface,#959595,#191919,4.5,5.869669275763188,pass
+default,dark Muted text: subtle,#959595,#191919,4.5,5.869669275763188,pass
+default,dark Muted text: raised,#959595,#212121,4.5,5.375736550940406,pass
+default,dark Placeholder: canvas,#959595,#000000,4.5,7.010875888315529,pass
+default,dark Placeholder: surface,#959595,#191919,4.5,5.869669275763188,pass
+default,dark Placeholder: subtle,#959595,#191919,4.5,5.869669275763188,pass
+default,dark Placeholder: raised,#959595,#212121,4.5,5.375736550940406,pass
+default,dark Control border: canvas,#828282,#000000,3,5.46455914633617,pass
+default,dark Control border: surface,#828282,#191919,3,4.575056731541526,pass
+default,dark Control border: subtle,#828282,#191919,3,4.575056731541526,pass
+default,dark Control border: raised,#828282,#212121,3,4.190065664504738,pass
+default,dark Strong/action border: canvas,#959595,#000000,3,7.010875888315529,pass
+default,dark Strong/action border: surface,#959595,#191919,3,5.869669275763188,pass
+default,dark Strong/action border: subtle,#959595,#191919,3,5.869669275763188,pass
+default,dark Strong/action border: raised,#959595,#212121,3,5.375736550940406,pass
+default,dark higher-contrast edge: canvas,#FFFFFF,#000000,3,21.0,pass
+default,dark higher-contrast edge: surface,#FFFFFF,#191919,3,17.581691183046004,pass
+default,dark higher-contrast edge: subtle,#FFFFFF,#191919,3,17.581691183046004,pass
+default,dark higher-contrast edge: raised,#FFFFFF,#212121,3,16.102191704447957,pass
+default,dark normal focus: canvas,#DFD49A,#000000,3,14.021607238425982,pass
+default,dark normal focus: surface,#DFD49A,#191919,3,11.739217540760388,pass
+default,dark normal focus: subtle,#DFD49A,#191919,3,11.739217540760388,pass
+default,dark normal focus: raised,#DFD49A,#212121,3,10.75136227417192,pass
+default,dark normal focus: separating gap,#DFD49A,#000000,3,14.021607238425982,pass
+default,dark higher-contrast focus: canvas,#DFD49A,#000000,3,14.021607238425982,pass
+default,dark higher-contrast focus: surface,#DFD49A,#191919,3,11.739217540760388,pass
+default,dark higher-contrast focus: subtle,#DFD49A,#191919,3,11.739217540760388,pass
+default,dark higher-contrast focus: raised,#DFD49A,#212121,3,10.75136227417192,pass
+default,dark higher-contrast focus: separating gap,#DFD49A,#000000,3,14.021607238425982,pass
+default,dark disabled: label,#B8B8B8,#212121,4.5,8.117347677450482,pass
+default,dark selected: label,#FFFFFF,#464029,4.5,10.366297337903037,pass
+default,dark selected: marker,#FFFFFF,#464029,3,10.366297337903037,pass
+default,dark neutral action: default label,#FFFFFF,#191919,4.5,17.581691183046004,pass
+default,dark neutral action: hover label,#FFFFFF,#212121,4.5,16.102191704447957,pass
+default,dark neutral action: pressed label,#FFFFFF,#323232,4.5,12.82113382786086,pass
+default,light Success: status text,#166534,#F0FDF4,4.5,6.811651629293788,pass
+default,light Success: status icon,#166534,#F0FDF4,3,6.811651629293788,pass
+default,dark Success: status text,#86EFAC,#143322,4.5,9.798372884623275,pass
+default,dark Success: status icon,#86EFAC,#143322,3,9.798372884623275,pass
+default,light Warning: status text,#854D0E,#FFFBEA,4.5,6.602820957010432,pass
+default,light Warning: status icon,#854D0E,#FFFBEA,3,6.602820957010432,pass
+default,dark Warning: status text,#FDE68A,#332B12,4.5,11.278744711536344,pass
+default,dark Warning: status icon,#FDE68A,#332B12,3,11.278744711536344,pass
+default,light Danger/error: status text,#B91C1C,#FFF1F2,4.5,5.889675463818466,pass
+default,light Danger/error: status icon,#B91C1C,#FFF1F2,3,5.889675463818466,pass
+default,dark Danger/error: status text,#FF6666,#3B1717,4.5,5.560189091999312,pass
+default,dark Danger/error: status icon,#FF6666,#3B1717,3,5.560189091999312,pass
+default,light Information: status text,#1D4ED8,#EFF6FF,4.5,6.157973971775643,pass
+default,light Information: status icon,#1D4ED8,#EFF6FF,3,6.157973971775643,pass
+default,dark Information: status text,#93C5FD,#17283B,4.5,8.299810978536046,pass
+default,dark Information: status icon,#93C5FD,#17283B,3,8.299810978536046,pass
+default,informational Oat notification: label,#000000,#DFD49A,4.5,14.021607238425982,pass
+default,informational Oat notification: icon,#000000,#DFD49A,3,14.021607238425982,pass
+default,light Blue category: label,#000000,#5AB8FF,4.5,9.734927748164832,pass
+default,light Blue category: icon,#000000,#5AB8FF,3,9.734927748164832,pass
+default,dark Blue category: label,#000000,#5AB8FF,4.5,9.734927748164832,pass
+default,dark Blue category: icon,#000000,#5AB8FF,3,9.734927748164832,pass
+default,light Lavender category: label,#000000,#9D8AFF,4.5,7.513011248493646,pass
+default,light Lavender category: icon,#000000,#9D8AFF,3,7.513011248493646,pass
+default,dark Lavender category: label,#000000,#9D8AFF,4.5,7.513011248493646,pass
+default,dark Lavender category: icon,#000000,#9D8AFF,3,7.513011248493646,pass
+default,light Green category: label,#000000,#30B588,4.5,8.090739778852315,pass
+default,light Green category: icon,#000000,#30B588,3,8.090739778852315,pass
+default,dark Green category: label,#000000,#30B588,4.5,8.090739778852315,pass
+default,dark Green category: icon,#000000,#30B588,3,8.090739778852315,pass
+high-contrast,Action / Oat: default label,#000000,#DFD49A,4.5,14.021607238425982,pass
+high-contrast,Action / Oat: default essential icon,#000000,#DFD49A,3,14.021607238425982,pass
+high-contrast,Action / Oat: hover label,#000000,#E7DFAF,4.5,15.57188440623289,pass
+high-contrast,Action / Oat: hover essential icon,#000000,#E7DFAF,3,15.57188440623289,pass
+high-contrast,Action / Oat: pressed label,#000000,#CFC184,4.5,11.614253898437852,pass
+high-contrast,Action / Oat: pressed essential icon,#000000,#CFC184,3,11.614253898437852,pass
+high-contrast,Action / Oat: loading label,#000000,#DFD49A,4.5,14.021607238425982,pass
+high-contrast,Action / Oat: loading progress indicator,#000000,#DFD49A,3,14.021607238425982,pass
+high-contrast,Accept / Evergreen: default label,#FFFFFF,#3F7057,4.5,5.727307367816484,pass
+high-contrast,Accept / Evergreen: default essential icon,#FFFFFF,#3F7057,3,5.727307367816484,pass
+high-contrast,Accept / Evergreen: hover label,#FFFFFF,#4A7A62,4.5,4.939606243085638,pass
+high-contrast,Accept / Evergreen: hover essential icon,#FFFFFF,#4A7A62,3,4.939606243085638,pass
+high-contrast,Accept / Evergreen: pressed label,#FFFFFF,#345E49,4.5,7.385778508751097,pass
+high-contrast,Accept / Evergreen: pressed essential icon,#FFFFFF,#345E49,3,7.385778508751097,pass
+high-contrast,Accept / Evergreen: loading label,#FFFFFF,#3F7057,4.5,5.727307367816484,pass
+high-contrast,Accept / Evergreen: loading progress indicator,#FFFFFF,#3F7057,3,5.727307367816484,pass
+high-contrast,Decline / Soft red: default label,#000000,#D99090,4.5,8.342369590246351,pass
+high-contrast,Decline / Soft red: default essential icon,#000000,#D99090,3,8.342369590246351,pass
+high-contrast,Decline / Soft red: hover label,#000000,#E1A4A4,4.5,10.047761297838784,pass
+high-contrast,Decline / Soft red: hover essential icon,#000000,#E1A4A4,3,10.047761297838784,pass
+high-contrast,Decline / Soft red: pressed label,#000000,#CB7F7F,4.5,6.881511971879262,pass
+high-contrast,Decline / Soft red: pressed essential icon,#000000,#CB7F7F,3,6.881511971879262,pass
+high-contrast,Decline / Soft red: loading label,#000000,#D99090,4.5,8.342369590246351,pass
+high-contrast,Decline / Soft red: loading progress indicator,#000000,#D99090,3,8.342369590246351,pass
+high-contrast,Destructive / Muted red: default label,#FFFFFF,#AD4648,4.5,5.60525130123578,pass
+high-contrast,Destructive / Muted red: default essential icon,#FFFFFF,#AD4648,3,5.60525130123578,pass
+high-contrast,Destructive / Muted red: hover label,#FFFFFF,#B94F51,4.5,4.883645227240549,pass
+high-contrast,Destructive / Muted red: hover essential icon,#FFFFFF,#B94F51,3,4.883645227240549,pass
+high-contrast,Destructive / Muted red: pressed label,#FFFFFF,#983D40,4.5,6.825693400406773,pass
+high-contrast,Destructive / Muted red: pressed essential icon,#FFFFFF,#983D40,3,6.825693400406773,pass
+high-contrast,Destructive / Muted red: loading label,#FFFFFF,#AD4648,4.5,5.60525130123578,pass
+high-contrast,Destructive / Muted red: loading progress indicator,#FFFFFF,#AD4648,3,5.60525130123578,pass
+high-contrast,light Primary text: canvas,#000000,#FFFFFF,4.5,21.0,pass
+high-contrast,light Primary text: surface,#000000,#FFFFFF,4.5,21.0,pass
+high-contrast,light Primary text: subtle,#000000,#F4F4F4,4.5,19.093223487822993,pass
+high-contrast,light Primary text: raised,#000000,#EAEAEA,4.5,17.455715087925668,pass
+high-contrast,light Secondary text: canvas,#191919,#FFFFFF,4.5,17.581691183046004,pass
+high-contrast,light Secondary text: surface,#191919,#FFFFFF,4.5,17.581691183046004,pass
+high-contrast,light Secondary text: subtle,#191919,#F4F4F4,4.5,15.985293288180207,pass
+high-contrast,light Secondary text: raised,#191919,#EAEAEA,4.5,14.614332955006944,pass
+high-contrast,light Muted text: canvas,#222222,#FFFFFF,4.5,15.909984431773273,pass
+high-contrast,light Muted text: surface,#222222,#FFFFFF,4.5,15.909984431773273,pass
+high-contrast,light Muted text: subtle,#222222,#F4F4F4,4.5,14.465375640172933,pass
+high-contrast,light Muted text: raised,#222222,#EAEAEA,4.5,13.224769299731772,pass
+high-contrast,light Placeholder: canvas,#222222,#FFFFFF,4.5,15.909984431773273,pass
+high-contrast,light Placeholder: surface,#222222,#FFFFFF,4.5,15.909984431773273,pass
+high-contrast,light Placeholder: subtle,#222222,#F4F4F4,4.5,14.465375640172933,pass
+high-contrast,light Placeholder: raised,#222222,#EAEAEA,4.5,13.224769299731772,pass
+high-contrast,light Control border: canvas,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light Control border: surface,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light Control border: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+high-contrast,light Control border: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+high-contrast,light Strong/action border: canvas,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light Strong/action border: surface,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light Strong/action border: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+high-contrast,light Strong/action border: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+high-contrast,light higher-contrast edge: canvas,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light higher-contrast edge: surface,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light higher-contrast edge: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+high-contrast,light higher-contrast edge: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+high-contrast,light normal focus: canvas,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light normal focus: surface,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light normal focus: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+high-contrast,light normal focus: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+high-contrast,light normal focus: separating gap,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light higher-contrast focus: canvas,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light higher-contrast focus: surface,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light higher-contrast focus: subtle,#000000,#F4F4F4,3,19.093223487822993,pass
+high-contrast,light higher-contrast focus: raised,#000000,#EAEAEA,3,17.455715087925668,pass
+high-contrast,light higher-contrast focus: separating gap,#000000,#FFFFFF,3,21.0,pass
+high-contrast,light disabled: label,#595959,#EAEAEA,4.5,5.82250272969269,pass
+high-contrast,light selected: label,#000000,#FBF5CE,4.5,19.054055317434308,pass
+high-contrast,light selected: marker,#000000,#FBF5CE,3,19.054055317434308,pass
+high-contrast,light neutral action: default label,#000000,#FFFFFF,4.5,21.0,pass
+high-contrast,light neutral action: hover label,#000000,#F4F4F4,4.5,19.093223487822993,pass
+high-contrast,light neutral action: pressed label,#000000,#EAEAEA,4.5,17.455715087925668,pass
+high-contrast,dark Primary text: canvas,#FFFFFF,#000000,4.5,21.0,pass
+high-contrast,dark Primary text: surface,#FFFFFF,#191919,4.5,17.581691183046004,pass
+high-contrast,dark Primary text: subtle,#FFFFFF,#191919,4.5,17.581691183046004,pass
+high-contrast,dark Primary text: raised,#FFFFFF,#212121,4.5,16.102191704447957,pass
+high-contrast,dark Secondary text: canvas,#FFFFFF,#000000,4.5,21.0,pass
+high-contrast,dark Secondary text: surface,#FFFFFF,#191919,4.5,17.581691183046004,pass
+high-contrast,dark Secondary text: subtle,#FFFFFF,#191919,4.5,17.581691183046004,pass
+high-contrast,dark Secondary text: raised,#FFFFFF,#212121,4.5,16.102191704447957,pass
+high-contrast,dark Muted text: canvas,#EEEEEE,#000000,4.5,18.099852162484677,pass
+high-contrast,dark Muted text: surface,#EEEEEE,#191919,4.5,15.153619579980617,pass
+high-contrast,dark Muted text: subtle,#EEEEEE,#191919,4.5,15.153619579980617,pass
+high-contrast,dark Muted text: raised,#EEEEEE,#212121,4.5,13.878442349642627,pass
+high-contrast,dark Placeholder: canvas,#EEEEEE,#000000,4.5,18.099852162484677,pass
+high-contrast,dark Placeholder: surface,#EEEEEE,#191919,4.5,15.153619579980617,pass
+high-contrast,dark Placeholder: subtle,#EEEEEE,#191919,4.5,15.153619579980617,pass
+high-contrast,dark Placeholder: raised,#EEEEEE,#212121,4.5,13.878442349642627,pass
+high-contrast,dark Control border: canvas,#FFFFFF,#000000,3,21.0,pass
+high-contrast,dark Control border: surface,#FFFFFF,#191919,3,17.581691183046004,pass
+high-contrast,dark Control border: subtle,#FFFFFF,#191919,3,17.581691183046004,pass
+high-contrast,dark Control border: raised,#FFFFFF,#212121,3,16.102191704447957,pass
+high-contrast,dark Strong/action border: canvas,#FFFFFF,#000000,3,21.0,pass
+high-contrast,dark Strong/action border: surface,#FFFFFF,#191919,3,17.581691183046004,pass
+high-contrast,dark Strong/action border: subtle,#FFFFFF,#191919,3,17.581691183046004,pass
+high-contrast,dark Strong/action border: raised,#FFFFFF,#212121,3,16.102191704447957,pass
+high-contrast,dark higher-contrast edge: canvas,#FFFFFF,#000000,3,21.0,pass
+high-contrast,dark higher-contrast edge: surface,#FFFFFF,#191919,3,17.581691183046004,pass
+high-contrast,dark higher-contrast edge: subtle,#FFFFFF,#191919,3,17.581691183046004,pass
+high-contrast,dark higher-contrast edge: raised,#FFFFFF,#212121,3,16.102191704447957,pass
+high-contrast,dark normal focus: canvas,#FFFFFF,#000000,3,21.0,pass
+high-contrast,dark normal focus: surface,#FFFFFF,#191919,3,17.581691183046004,pass
+high-contrast,dark normal focus: subtle,#FFFFFF,#191919,3,17.581691183046004,pass
+high-contrast,dark normal focus: raised,#FFFFFF,#212121,3,16.102191704447957,pass
+high-contrast,dark normal focus: separating gap,#FFFFFF,#000000,3,21.0,pass
+high-contrast,dark higher-contrast focus: canvas,#FFFFFF,#000000,3,21.0,pass
+high-contrast,dark higher-contrast focus: surface,#FFFFFF,#191919,3,17.581691183046004,pass
+high-contrast,dark higher-contrast focus: subtle,#FFFFFF,#191919,3,17.581691183046004,pass
+high-contrast,dark higher-contrast focus: raised,#FFFFFF,#212121,3,16.102191704447957,pass
+high-contrast,dark higher-contrast focus: separating gap,#FFFFFF,#000000,3,21.0,pass
+high-contrast,dark disabled: label,#B8B8B8,#212121,4.5,8.117347677450482,pass
+high-contrast,dark selected: label,#FFFFFF,#464029,4.5,10.366297337903037,pass
+high-contrast,dark selected: marker,#FFFFFF,#464029,3,10.366297337903037,pass
+high-contrast,dark neutral action: default label,#FFFFFF,#191919,4.5,17.581691183046004,pass
+high-contrast,dark neutral action: hover label,#FFFFFF,#212121,4.5,16.102191704447957,pass
+high-contrast,dark neutral action: pressed label,#FFFFFF,#323232,4.5,12.82113382786086,pass
+high-contrast,light Success: status text,#166534,#F0FDF4,4.5,6.811651629293788,pass
+high-contrast,light Success: status icon,#166534,#F0FDF4,3,6.811651629293788,pass
+high-contrast,dark Success: status text,#86EFAC,#143322,4.5,9.798372884623275,pass
+high-contrast,dark Success: status icon,#86EFAC,#143322,3,9.798372884623275,pass
+high-contrast,light Warning: status text,#854D0E,#FFFBEA,4.5,6.602820957010432,pass
+high-contrast,light Warning: status icon,#854D0E,#FFFBEA,3,6.602820957010432,pass
+high-contrast,dark Warning: status text,#FDE68A,#332B12,4.5,11.278744711536344,pass
+high-contrast,dark Warning: status icon,#FDE68A,#332B12,3,11.278744711536344,pass
+high-contrast,light Danger/error: status text,#B91C1C,#FFF1F2,4.5,5.889675463818466,pass
+high-contrast,light Danger/error: status icon,#B91C1C,#FFF1F2,3,5.889675463818466,pass
+high-contrast,dark Danger/error: status text,#FF6666,#3B1717,4.5,5.560189091999312,pass
+high-contrast,dark Danger/error: status icon,#FF6666,#3B1717,3,5.560189091999312,pass
+high-contrast,light Information: status text,#1D4ED8,#EFF6FF,4.5,6.157973971775643,pass
+high-contrast,light Information: status icon,#1D4ED8,#EFF6FF,3,6.157973971775643,pass
+high-contrast,dark Information: status text,#93C5FD,#17283B,4.5,8.299810978536046,pass
+high-contrast,dark Information: status icon,#93C5FD,#17283B,3,8.299810978536046,pass
+high-contrast,informational Oat notification: label,#000000,#DFD49A,4.5,14.021607238425982,pass
+high-contrast,informational Oat notification: icon,#000000,#DFD49A,3,14.021607238425982,pass
+high-contrast,light Blue category: label,#000000,#5AB8FF,4.5,9.734927748164832,pass
+high-contrast,light Blue category: icon,#000000,#5AB8FF,3,9.734927748164832,pass
+high-contrast,dark Blue category: label,#000000,#5AB8FF,4.5,9.734927748164832,pass
+high-contrast,dark Blue category: icon,#000000,#5AB8FF,3,9.734927748164832,pass
+high-contrast,light Lavender category: label,#000000,#9D8AFF,4.5,7.513011248493646,pass
+high-contrast,light Lavender category: icon,#000000,#9D8AFF,3,7.513011248493646,pass
+high-contrast,dark Lavender category: label,#000000,#9D8AFF,4.5,7.513011248493646,pass
+high-contrast,dark Lavender category: icon,#000000,#9D8AFF,3,7.513011248493646,pass
+high-contrast,light Green category: label,#000000,#30B588,4.5,8.090739778852315,pass
+high-contrast,light Green category: icon,#000000,#30B588,3,8.090739778852315,pass
+high-contrast,dark Green category: label,#000000,#30B588,4.5,8.090739778852315,pass
+high-contrast,dark Green category: icon,#000000,#30B588,3,8.090739778852315,pass
+obsidian-studio,Action / Oat: default label,#000000,#DFD49A,4.5,14.021607238425982,pass
+obsidian-studio,Action / Oat: default essential icon,#000000,#DFD49A,3,14.021607238425982,pass
+obsidian-studio,Action / Oat: hover label,#000000,#E7DFAF,4.5,15.57188440623289,pass
+obsidian-studio,Action / Oat: hover essential icon,#000000,#E7DFAF,3,15.57188440623289,pass
+obsidian-studio,Action / Oat: pressed label,#000000,#CFC184,4.5,11.614253898437852,pass
+obsidian-studio,Action / Oat: pressed essential icon,#000000,#CFC184,3,11.614253898437852,pass
+obsidian-studio,Action / Oat: loading label,#000000,#DFD49A,4.5,14.021607238425982,pass
+obsidian-studio,Action / Oat: loading progress indicator,#000000,#DFD49A,3,14.021607238425982,pass
+obsidian-studio,Accept / Evergreen: default label,#FFFFFF,#3F7057,4.5,5.727307367816484,pass
+obsidian-studio,Accept / Evergreen: default essential icon,#FFFFFF,#3F7057,3,5.727307367816484,pass
+obsidian-studio,Accept / Evergreen: hover label,#FFFFFF,#4A7A62,4.5,4.939606243085638,pass
+obsidian-studio,Accept / Evergreen: hover essential icon,#FFFFFF,#4A7A62,3,4.939606243085638,pass
+obsidian-studio,Accept / Evergreen: pressed label,#FFFFFF,#345E49,4.5,7.385778508751097,pass
+obsidian-studio,Accept / Evergreen: pressed essential icon,#FFFFFF,#345E49,3,7.385778508751097,pass
+obsidian-studio,Accept / Evergreen: loading label,#FFFFFF,#3F7057,4.5,5.727307367816484,pass
+obsidian-studio,Accept / Evergreen: loading progress indicator,#FFFFFF,#3F7057,3,5.727307367816484,pass
+obsidian-studio,Decline / Soft red: default label,#000000,#D99090,4.5,8.342369590246351,pass
+obsidian-studio,Decline / Soft red: default essential icon,#000000,#D99090,3,8.342369590246351,pass
+obsidian-studio,Decline / Soft red: hover label,#000000,#E1A4A4,4.5,10.047761297838784,pass
+obsidian-studio,Decline / Soft red: hover essential icon,#000000,#E1A4A4,3,10.047761297838784,pass
+obsidian-studio,Decline / Soft red: pressed label,#000000,#CB7F7F,4.5,6.881511971879262,pass
+obsidian-studio,Decline / Soft red: pressed essential icon,#000000,#CB7F7F,3,6.881511971879262,pass
+obsidian-studio,Decline / Soft red: loading label,#000000,#D99090,4.5,8.342369590246351,pass
+obsidian-studio,Decline / Soft red: loading progress indicator,#000000,#D99090,3,8.342369590246351,pass
+obsidian-studio,Destructive / Muted red: default label,#FFFFFF,#AD4648,4.5,5.60525130123578,pass
+obsidian-studio,Destructive / Muted red: default essential icon,#FFFFFF,#AD4648,3,5.60525130123578,pass
+obsidian-studio,Destructive / Muted red: hover label,#FFFFFF,#B94F51,4.5,4.883645227240549,pass
+obsidian-studio,Destructive / Muted red: hover essential icon,#FFFFFF,#B94F51,3,4.883645227240549,pass
+obsidian-studio,Destructive / Muted red: pressed label,#FFFFFF,#983D40,4.5,6.825693400406773,pass
+obsidian-studio,Destructive / Muted red: pressed essential icon,#FFFFFF,#983D40,3,6.825693400406773,pass
+obsidian-studio,Destructive / Muted red: loading label,#FFFFFF,#AD4648,4.5,5.60525130123578,pass
+obsidian-studio,Destructive / Muted red: loading progress indicator,#FFFFFF,#AD4648,3,5.60525130123578,pass
+obsidian-studio,light Primary text: canvas,#000000,#FFFFFF,4.5,21.0,pass
+obsidian-studio,light Primary text: surface,#000000,#FFFFFF,4.5,21.0,pass
+obsidian-studio,light Primary text: subtle,#000000,#F1F2F5,4.5,18.759521162940402,pass
+obsidian-studio,light Primary text: raised,#000000,#E8EAF0,4.5,17.45854255061716,pass
+obsidian-studio,light Secondary text: canvas,#414550,#FFFFFF,4.5,9.580949164646878,pass
+obsidian-studio,light Secondary text: surface,#414550,#FFFFFF,4.5,9.580949164646878,pass
+obsidian-studio,light Secondary text: subtle,#414550,#F1F2F5,4.5,8.558762791202346,pass
+obsidian-studio,light Secondary text: raised,#414550,#E8EAF0,4.5,7.965209936489878,pass
+obsidian-studio,light Muted text: canvas,#595959,#FFFFFF,4.5,7.004729208035935,pass
+obsidian-studio,light Muted text: surface,#595959,#FFFFFF,4.5,7.004729208035935,pass
+obsidian-studio,light Muted text: subtle,#595959,#F1F2F5,4.5,6.257398372324614,pass
+obsidian-studio,light Muted text: raised,#595959,#E8EAF0,4.5,5.823445854002202,pass
+obsidian-studio,light Placeholder: canvas,#595959,#FFFFFF,4.5,7.004729208035935,pass
+obsidian-studio,light Placeholder: surface,#595959,#FFFFFF,4.5,7.004729208035935,pass
+obsidian-studio,light Placeholder: subtle,#595959,#F1F2F5,4.5,6.257398372324614,pass
+obsidian-studio,light Placeholder: raised,#595959,#E8EAF0,4.5,5.823445854002202,pass
+obsidian-studio,light Control border: canvas,#737680,#FFFFFF,3,4.533636207409779,pass
+obsidian-studio,light Control border: surface,#737680,#FFFFFF,3,4.533636207409779,pass
+obsidian-studio,light Control border: subtle,#737680,#F1F2F5,3,4.049944970379838,pass
+obsidian-studio,light Control border: raised,#737680,#E8EAF0,3,3.76908003028963,pass
+obsidian-studio,light Strong/action border: canvas,#595959,#FFFFFF,3,7.004729208035935,pass
+obsidian-studio,light Strong/action border: surface,#595959,#FFFFFF,3,7.004729208035935,pass
+obsidian-studio,light Strong/action border: subtle,#595959,#F1F2F5,3,6.257398372324614,pass
+obsidian-studio,light Strong/action border: raised,#595959,#E8EAF0,3,5.823445854002202,pass
+obsidian-studio,light higher-contrast edge: canvas,#000000,#FFFFFF,3,21.0,pass
+obsidian-studio,light higher-contrast edge: surface,#000000,#FFFFFF,3,21.0,pass
+obsidian-studio,light higher-contrast edge: subtle,#000000,#F1F2F5,3,18.759521162940402,pass
+obsidian-studio,light higher-contrast edge: raised,#000000,#E8EAF0,3,17.45854255061716,pass
+obsidian-studio,light normal focus: canvas,#000000,#FFFFFF,3,21.0,pass
+obsidian-studio,light normal focus: surface,#000000,#FFFFFF,3,21.0,pass
+obsidian-studio,light normal focus: subtle,#000000,#F1F2F5,3,18.759521162940402,pass
+obsidian-studio,light normal focus: raised,#000000,#E8EAF0,3,17.45854255061716,pass
+obsidian-studio,light normal focus: separating gap,#000000,#FFFFFF,3,21.0,pass
+obsidian-studio,light higher-contrast focus: canvas,#000000,#FFFFFF,3,21.0,pass
+obsidian-studio,light higher-contrast focus: surface,#000000,#FFFFFF,3,21.0,pass
+obsidian-studio,light higher-contrast focus: subtle,#000000,#F1F2F5,3,18.759521162940402,pass
+obsidian-studio,light higher-contrast focus: raised,#000000,#E8EAF0,3,17.45854255061716,pass
+obsidian-studio,light higher-contrast focus: separating gap,#000000,#FFFFFF,3,21.0,pass
+obsidian-studio,light disabled: label,#595959,#EAEAEA,4.5,5.82250272969269,pass
+obsidian-studio,light selected: label,#000000,#FBF5CE,4.5,19.054055317434308,pass
+obsidian-studio,light selected: marker,#000000,#FBF5CE,3,19.054055317434308,pass
+obsidian-studio,light neutral action: default label,#000000,#FFFFFF,4.5,21.0,pass
+obsidian-studio,light neutral action: hover label,#000000,#F4F4F4,4.5,19.093223487822993,pass
+obsidian-studio,light neutral action: pressed label,#000000,#EAEAEA,4.5,17.455715087925668,pass
+obsidian-studio,dark Primary text: canvas,#F5F6FA,#0C0E13,4.5,17.87489747072631,pass
+obsidian-studio,dark Primary text: surface,#F5F6FA,#171A22,4.5,16.106534769300133,pass
+obsidian-studio,dark Primary text: subtle,#F5F6FA,#191C24,4.5,15.771799783327374,pass
+obsidian-studio,dark Primary text: raised,#F5F6FA,#222632,4.5,13.976106298743625,pass
+obsidian-studio,dark Secondary text: canvas,#C8C8C8,#0C0E13,4.5,11.537983619522283,pass
+obsidian-studio,dark Secondary text: surface,#C8C8C8,#171A22,4.5,10.396531484434856,pass
+obsidian-studio,dark Secondary text: subtle,#C8C8C8,#191C24,4.5,10.180464970410942,pass
+obsidian-studio,dark Secondary text: raised,#C8C8C8,#222632,4.5,9.02137121646124,pass
+obsidian-studio,dark Muted text: canvas,#959595,#0C0E13,4.5,6.444701423654067,pass
+obsidian-studio,dark Muted text: surface,#959595,#171A22,4.5,5.807127438232211,pass
+obsidian-studio,dark Muted text: subtle,#959595,#191C24,4.5,5.6864404779753235,pass
+obsidian-studio,dark Muted text: raised,#959595,#222632,4.5,5.03901252066839,pass
+obsidian-studio,dark Placeholder: canvas,#959595,#0C0E13,4.5,6.444701423654067,pass
+obsidian-studio,dark Placeholder: surface,#959595,#171A22,4.5,5.807127438232211,pass
+obsidian-studio,dark Placeholder: subtle,#959595,#191C24,4.5,5.6864404779753235,pass
+obsidian-studio,dark Placeholder: raised,#959595,#222632,4.5,5.03901252066839,pass
+obsidian-studio,dark Control border: canvas,#898E9C,#0C0E13,3,5.895046778642606,pass
+obsidian-studio,dark Control border: surface,#898E9C,#171A22,3,5.311850099412057,pass
+obsidian-studio,dark Control border: subtle,#898E9C,#191C24,3,5.201456268958521,pass
+obsidian-studio,dark Control border: raised,#898E9C,#222632,3,4.609246041791562,pass
+obsidian-studio,dark Strong/action border: canvas,#959595,#0C0E13,3,6.444701423654067,pass
+obsidian-studio,dark Strong/action border: surface,#959595,#171A22,3,5.807127438232211,pass
+obsidian-studio,dark Strong/action border: subtle,#959595,#191C24,3,5.6864404779753235,pass
+obsidian-studio,dark Strong/action border: raised,#959595,#222632,3,5.03901252066839,pass
+obsidian-studio,dark higher-contrast edge: canvas,#FFFFFF,#0C0E13,3,19.304111505139282,pass
+obsidian-studio,dark higher-contrast edge: surface,#FFFFFF,#171A22,3,17.394356731677462,pass
+obsidian-studio,dark higher-contrast edge: subtle,#FFFFFF,#191C24,3,17.032857511641552,pass
+obsidian-studio,dark higher-contrast edge: raised,#FFFFFF,#222632,3,15.09358668157238,pass
+obsidian-studio,dark normal focus: canvas,#DFD49A,#0C0E13,3,12.889269981516346,pass
+obsidian-studio,dark normal focus: surface,#DFD49A,#171A22,3,11.614135155078687,pass
+obsidian-studio,dark normal focus: subtle,#DFD49A,#191C24,3,11.372763722681503,pass
+obsidian-studio,dark normal focus: raised,#DFD49A,#222632,3,10.077921155625965,pass
+obsidian-studio,dark normal focus: separating gap,#DFD49A,#000000,3,14.021607238425982,pass
+obsidian-studio,dark higher-contrast focus: canvas,#DFD49A,#0C0E13,3,12.889269981516346,pass
+obsidian-studio,dark higher-contrast focus: surface,#DFD49A,#171A22,3,11.614135155078687,pass
+obsidian-studio,dark higher-contrast focus: subtle,#DFD49A,#191C24,3,11.372763722681503,pass
+obsidian-studio,dark higher-contrast focus: raised,#DFD49A,#222632,3,10.077921155625965,pass
+obsidian-studio,dark higher-contrast focus: separating gap,#DFD49A,#000000,3,14.021607238425982,pass
+obsidian-studio,dark disabled: label,#B8B8B8,#212121,4.5,8.117347677450482,pass
+obsidian-studio,dark selected: label,#FFFFFF,#464029,4.5,10.366297337903037,pass
+obsidian-studio,dark selected: marker,#FFFFFF,#464029,3,10.366297337903037,pass
+obsidian-studio,dark neutral action: default label,#FFFFFF,#191919,4.5,17.581691183046004,pass
+obsidian-studio,dark neutral action: hover label,#FFFFFF,#212121,4.5,16.102191704447957,pass
+obsidian-studio,dark neutral action: pressed label,#FFFFFF,#323232,4.5,12.82113382786086,pass
+obsidian-studio,light Success: status text,#166534,#F0FDF4,4.5,6.811651629293788,pass
+obsidian-studio,light Success: status icon,#166534,#F0FDF4,3,6.811651629293788,pass
+obsidian-studio,dark Success: status text,#86EFAC,#143322,4.5,9.798372884623275,pass
+obsidian-studio,dark Success: status icon,#86EFAC,#143322,3,9.798372884623275,pass
+obsidian-studio,light Warning: status text,#854D0E,#FFFBEA,4.5,6.602820957010432,pass
+obsidian-studio,light Warning: status icon,#854D0E,#FFFBEA,3,6.602820957010432,pass
+obsidian-studio,dark Warning: status text,#FDE68A,#332B12,4.5,11.278744711536344,pass
+obsidian-studio,dark Warning: status icon,#FDE68A,#332B12,3,11.278744711536344,pass
+obsidian-studio,light Danger/error: status text,#B91C1C,#FFF1F2,4.5,5.889675463818466,pass
+obsidian-studio,light Danger/error: status icon,#B91C1C,#FFF1F2,3,5.889675463818466,pass
+obsidian-studio,dark Danger/error: status text,#FF6666,#3B1717,4.5,5.560189091999312,pass
+obsidian-studio,dark Danger/error: status icon,#FF6666,#3B1717,3,5.560189091999312,pass
+obsidian-studio,light Information: status text,#1D4ED8,#EFF6FF,4.5,6.157973971775643,pass
+obsidian-studio,light Information: status icon,#1D4ED8,#EFF6FF,3,6.157973971775643,pass
+obsidian-studio,dark Information: status text,#93C5FD,#17283B,4.5,8.299810978536046,pass
+obsidian-studio,dark Information: status icon,#93C5FD,#17283B,3,8.299810978536046,pass
+obsidian-studio,informational Oat notification: label,#000000,#DFD49A,4.5,14.021607238425982,pass
+obsidian-studio,informational Oat notification: icon,#000000,#DFD49A,3,14.021607238425982,pass
+obsidian-studio,light Blue category: label,#000000,#5AB8FF,4.5,9.734927748164832,pass
+obsidian-studio,light Blue category: icon,#000000,#5AB8FF,3,9.734927748164832,pass
+obsidian-studio,dark Blue category: label,#000000,#5AB8FF,4.5,9.734927748164832,pass
+obsidian-studio,dark Blue category: icon,#000000,#5AB8FF,3,9.734927748164832,pass
+obsidian-studio,light Lavender category: label,#000000,#9D8AFF,4.5,7.513011248493646,pass
+obsidian-studio,light Lavender category: icon,#000000,#9D8AFF,3,7.513011248493646,pass
+obsidian-studio,dark Lavender category: label,#000000,#9D8AFF,4.5,7.513011248493646,pass
+obsidian-studio,dark Lavender category: icon,#000000,#9D8AFF,3,7.513011248493646,pass
+obsidian-studio,light Green category: label,#000000,#30B588,4.5,8.090739778852315,pass
+obsidian-studio,light Green category: icon,#000000,#30B588,3,8.090739778852315,pass
+obsidian-studio,dark Green category: label,#000000,#30B588,4.5,8.090739778852315,pass
+obsidian-studio,dark Green category: icon,#000000,#30B588,3,8.090739778852315,pass
+paper-editorial,Action / Oat: default label,#000000,#DFD49A,4.5,14.021607238425982,pass
+paper-editorial,Action / Oat: default essential icon,#000000,#DFD49A,3,14.021607238425982,pass
+paper-editorial,Action / Oat: hover label,#000000,#E7DFAF,4.5,15.57188440623289,pass
+paper-editorial,Action / Oat: hover essential icon,#000000,#E7DFAF,3,15.57188440623289,pass
+paper-editorial,Action / Oat: pressed label,#000000,#CFC184,4.5,11.614253898437852,pass
+paper-editorial,Action / Oat: pressed essential icon,#000000,#CFC184,3,11.614253898437852,pass
+paper-editorial,Action / Oat: loading label,#000000,#DFD49A,4.5,14.021607238425982,pass
+paper-editorial,Action / Oat: loading progress indicator,#000000,#DFD49A,3,14.021607238425982,pass
+paper-editorial,Accept / Evergreen: default label,#FFFFFF,#3F7057,4.5,5.727307367816484,pass
+paper-editorial,Accept / Evergreen: default essential icon,#FFFFFF,#3F7057,3,5.727307367816484,pass
+paper-editorial,Accept / Evergreen: hover label,#FFFFFF,#4A7A62,4.5,4.939606243085638,pass
+paper-editorial,Accept / Evergreen: hover essential icon,#FFFFFF,#4A7A62,3,4.939606243085638,pass
+paper-editorial,Accept / Evergreen: pressed label,#FFFFFF,#345E49,4.5,7.385778508751097,pass
+paper-editorial,Accept / Evergreen: pressed essential icon,#FFFFFF,#345E49,3,7.385778508751097,pass
+paper-editorial,Accept / Evergreen: loading label,#FFFFFF,#3F7057,4.5,5.727307367816484,pass
+paper-editorial,Accept / Evergreen: loading progress indicator,#FFFFFF,#3F7057,3,5.727307367816484,pass
+paper-editorial,Decline / Soft red: default label,#000000,#D99090,4.5,8.342369590246351,pass
+paper-editorial,Decline / Soft red: default essential icon,#000000,#D99090,3,8.342369590246351,pass
+paper-editorial,Decline / Soft red: hover label,#000000,#E1A4A4,4.5,10.047761297838784,pass
+paper-editorial,Decline / Soft red: hover essential icon,#000000,#E1A4A4,3,10.047761297838784,pass
+paper-editorial,Decline / Soft red: pressed label,#000000,#CB7F7F,4.5,6.881511971879262,pass
+paper-editorial,Decline / Soft red: pressed essential icon,#000000,#CB7F7F,3,6.881511971879262,pass
+paper-editorial,Decline / Soft red: loading label,#000000,#D99090,4.5,8.342369590246351,pass
+paper-editorial,Decline / Soft red: loading progress indicator,#000000,#D99090,3,8.342369590246351,pass
+paper-editorial,Destructive / Muted red: default label,#FFFFFF,#AD4648,4.5,5.60525130123578,pass
+paper-editorial,Destructive / Muted red: default essential icon,#FFFFFF,#AD4648,3,5.60525130123578,pass
+paper-editorial,Destructive / Muted red: hover label,#FFFFFF,#B94F51,4.5,4.883645227240549,pass
+paper-editorial,Destructive / Muted red: hover essential icon,#FFFFFF,#B94F51,3,4.883645227240549,pass
+paper-editorial,Destructive / Muted red: pressed label,#FFFFFF,#983D40,4.5,6.825693400406773,pass
+paper-editorial,Destructive / Muted red: pressed essential icon,#FFFFFF,#983D40,3,6.825693400406773,pass
+paper-editorial,Destructive / Muted red: loading label,#FFFFFF,#AD4648,4.5,5.60525130123578,pass
+paper-editorial,Destructive / Muted red: loading progress indicator,#FFFFFF,#AD4648,3,5.60525130123578,pass
+paper-editorial,light Primary text: canvas,#29251F,#FAF7EF,4.5,14.227573702917068,pass
+paper-editorial,light Primary text: surface,#29251F,#FFFDF8,4.5,14.983411388303251,pass
+paper-editorial,light Primary text: subtle,#29251F,#F5F0E7,4.5,13.418789109562159,pass
+paper-editorial,light Primary text: raised,#29251F,#EBE5D9,4.5,12.143434873862422,pass
+paper-editorial,light Secondary text: canvas,#5D564A,#FAF7EF,4.5,6.774644764999235,pass
+paper-editorial,light Secondary text: surface,#5D564A,#FFFDF8,4.5,7.134546736017722,pass
+paper-editorial,light Secondary text: subtle,#5D564A,#F5F0E7,4.5,6.389531433253818,pass
+paper-editorial,light Secondary text: raised,#5D564A,#EBE5D9,4.5,5.7822548816214505,pass
+paper-editorial,light Muted text: canvas,#595959,#FAF7EF,4.5,6.542918563027709,pass
+paper-editorial,light Muted text: surface,#595959,#FFFDF8,4.5,6.890510114870115,pass
+paper-editorial,light Muted text: subtle,#595959,#F5F0E7,4.5,6.17097800310865,pass
+paper-editorial,light Muted text: raised,#595959,#EBE5D9,4.5,5.584473299113692,pass
+paper-editorial,light Placeholder: canvas,#595959,#FAF7EF,4.5,6.542918563027709,pass
+paper-editorial,light Placeholder: surface,#595959,#FFFDF8,4.5,6.890510114870115,pass
+paper-editorial,light Placeholder: subtle,#595959,#F5F0E7,4.5,6.17097800310865,pass
+paper-editorial,light Placeholder: raised,#595959,#EBE5D9,4.5,5.584473299113692,pass
+paper-editorial,light Control border: canvas,#776F61,#FAF7EF,3,4.636383259633738,pass
+paper-editorial,light Control border: surface,#776F61,#FFFDF8,3,4.882690413945391,pass
+paper-editorial,light Control border: subtle,#776F61,#F5F0E7,3,4.372822133360215,pass
+paper-editorial,light Control border: raised,#776F61,#EBE5D9,3,3.95721852082796,pass
+paper-editorial,light Strong/action border: canvas,#595959,#FAF7EF,3,6.542918563027709,pass
+paper-editorial,light Strong/action border: surface,#595959,#FFFDF8,3,6.890510114870115,pass
+paper-editorial,light Strong/action border: subtle,#595959,#F5F0E7,3,6.17097800310865,pass
+paper-editorial,light Strong/action border: raised,#595959,#EBE5D9,3,5.584473299113692,pass
+paper-editorial,light higher-contrast edge: canvas,#000000,#FAF7EF,3,19.61550343244575,pass
+paper-editorial,light higher-contrast edge: surface,#000000,#FFFDF8,3,20.6575740638581,pass
+paper-editorial,light higher-contrast edge: subtle,#000000,#F5F0E7,3,18.50043509413802,pass
+paper-editorial,light higher-contrast edge: raised,#000000,#EBE5D9,3,16.742108909342136,pass
+paper-editorial,light normal focus: canvas,#000000,#FAF7EF,3,19.61550343244575,pass
+paper-editorial,light normal focus: surface,#000000,#FFFDF8,3,20.6575740638581,pass
+paper-editorial,light normal focus: subtle,#000000,#F5F0E7,3,18.50043509413802,pass
+paper-editorial,light normal focus: raised,#000000,#EBE5D9,3,16.742108909342136,pass
+paper-editorial,light normal focus: separating gap,#000000,#FFFFFF,3,21.0,pass
+paper-editorial,light higher-contrast focus: canvas,#000000,#FAF7EF,3,19.61550343244575,pass
+paper-editorial,light higher-contrast focus: surface,#000000,#FFFDF8,3,20.6575740638581,pass
+paper-editorial,light higher-contrast focus: subtle,#000000,#F5F0E7,3,18.50043509413802,pass
+paper-editorial,light higher-contrast focus: raised,#000000,#EBE5D9,3,16.742108909342136,pass
+paper-editorial,light higher-contrast focus: separating gap,#000000,#FFFFFF,3,21.0,pass
+paper-editorial,light disabled: label,#595959,#EAEAEA,4.5,5.82250272969269,pass
+paper-editorial,light selected: label,#000000,#FBF5CE,4.5,19.054055317434308,pass
+paper-editorial,light selected: marker,#000000,#FBF5CE,3,19.054055317434308,pass
+paper-editorial,light neutral action: default label,#000000,#FFFFFF,4.5,21.0,pass
+paper-editorial,light neutral action: hover label,#000000,#F4F4F4,4.5,19.093223487822993,pass
+paper-editorial,light neutral action: pressed label,#000000,#EAEAEA,4.5,17.455715087925668,pass
+paper-editorial,dark Primary text: canvas,#F8F2E5,#161410,4.5,16.487910441094044,pass
+paper-editorial,dark Primary text: surface,#F8F2E5,#1C1915,4.5,15.69603990675246,pass
+paper-editorial,dark Primary text: subtle,#F8F2E5,#211E19,4.5,14.887198698556647,pass
+paper-editorial,dark Primary text: raised,#F8F2E5,#2B2720,4.5,13.314331575886138,pass
+paper-editorial,dark Secondary text: canvas,#C8C8C8,#161410,4.5,10.994183022168682,pass
+paper-editorial,dark Secondary text: surface,#C8C8C8,#1C1915,4.5,10.46616162033505,pass
+paper-editorial,dark Secondary text: subtle,#C8C8C8,#211E19,4.5,9.926824127537099,pass
+paper-editorial,dark Secondary text: raised,#C8C8C8,#2B2720,4.5,8.878032100313789,pass
+paper-editorial,dark Muted text: canvas,#959595,#161410,4.5,6.14095402727028,pass
+paper-editorial,dark Muted text: surface,#959595,#1C1915,4.5,5.846020320278423,pass
+paper-editorial,dark Muted text: subtle,#959595,#211E19,4.5,5.544765853095457,pass
+paper-editorial,dark Muted text: raised,#959595,#2B2720,4.5,4.958948461265692,pass
+paper-editorial,dark Placeholder: canvas,#959595,#161410,4.5,6.14095402727028,pass
+paper-editorial,dark Placeholder: surface,#959595,#1C1915,4.5,5.846020320278423,pass
+paper-editorial,dark Placeholder: subtle,#959595,#211E19,4.5,5.544765853095457,pass
+paper-editorial,dark Placeholder: raised,#959595,#2B2720,4.5,4.958948461265692,pass
+paper-editorial,dark Control border: canvas,#928775,#161410,3,5.207034767006906,pass
+paper-editorial,dark Control border: surface,#928775,#1C1915,3,4.956954720901842,pass
+paper-editorial,dark Control border: subtle,#928775,#211E19,3,4.7015151788743434,pass
+paper-editorial,dark Control border: raised,#928775,#2B2720,3,4.204789179489063,pass
+paper-editorial,dark Strong/action border: canvas,#959595,#161410,3,6.14095402727028,pass
+paper-editorial,dark Strong/action border: surface,#959595,#1C1915,3,5.846020320278423,pass
+paper-editorial,dark Strong/action border: subtle,#959595,#211E19,3,5.544765853095457,pass
+paper-editorial,dark Strong/action border: raised,#959595,#2B2720,3,4.958948461265692,pass
+paper-editorial,dark higher-contrast edge: canvas,#FFFFFF,#161410,3,18.394282915149493,pass
+paper-editorial,dark higher-contrast edge: surface,#FFFFFF,#1C1915,3,17.51085437562116,pass
+paper-editorial,dark higher-contrast edge: subtle,#FFFFFF,#211E19,3,16.60849297147965,pass
+paper-editorial,dark higher-contrast edge: raised,#FFFFFF,#2B2720,3,14.853767110631344,pass
+paper-editorial,dark normal focus: canvas,#DFD49A,#161410,3,12.281781450891216,pass
+paper-editorial,dark normal focus: surface,#DFD49A,#1C1915,3,11.691920117344427,pass
+paper-editorial,dark normal focus: subtle,#DFD49A,#211E19,3,11.089417393726004,pass
+paper-editorial,dark normal focus: raised,#DFD49A,#2B2720,3,9.917794687443918,pass
+paper-editorial,dark normal focus: separating gap,#DFD49A,#000000,3,14.021607238425982,pass
+paper-editorial,dark higher-contrast focus: canvas,#DFD49A,#161410,3,12.281781450891216,pass
+paper-editorial,dark higher-contrast focus: surface,#DFD49A,#1C1915,3,11.691920117344427,pass
+paper-editorial,dark higher-contrast focus: subtle,#DFD49A,#211E19,3,11.089417393726004,pass
+paper-editorial,dark higher-contrast focus: raised,#DFD49A,#2B2720,3,9.917794687443918,pass
+paper-editorial,dark higher-contrast focus: separating gap,#DFD49A,#000000,3,14.021607238425982,pass
+paper-editorial,dark disabled: label,#B8B8B8,#212121,4.5,8.117347677450482,pass
+paper-editorial,dark selected: label,#FFFFFF,#464029,4.5,10.366297337903037,pass
+paper-editorial,dark selected: marker,#FFFFFF,#464029,3,10.366297337903037,pass
+paper-editorial,dark neutral action: default label,#FFFFFF,#191919,4.5,17.581691183046004,pass
+paper-editorial,dark neutral action: hover label,#FFFFFF,#212121,4.5,16.102191704447957,pass
+paper-editorial,dark neutral action: pressed label,#FFFFFF,#323232,4.5,12.82113382786086,pass
+paper-editorial,light Success: status text,#166534,#F0FDF4,4.5,6.811651629293788,pass
+paper-editorial,light Success: status icon,#166534,#F0FDF4,3,6.811651629293788,pass
+paper-editorial,dark Success: status text,#86EFAC,#143322,4.5,9.798372884623275,pass
+paper-editorial,dark Success: status icon,#86EFAC,#143322,3,9.798372884623275,pass
+paper-editorial,light Warning: status text,#854D0E,#FFFBEA,4.5,6.602820957010432,pass
+paper-editorial,light Warning: status icon,#854D0E,#FFFBEA,3,6.602820957010432,pass
+paper-editorial,dark Warning: status text,#FDE68A,#332B12,4.5,11.278744711536344,pass
+paper-editorial,dark Warning: status icon,#FDE68A,#332B12,3,11.278744711536344,pass
+paper-editorial,light Danger/error: status text,#B91C1C,#FFF1F2,4.5,5.889675463818466,pass
+paper-editorial,light Danger/error: status icon,#B91C1C,#FFF1F2,3,5.889675463818466,pass
+paper-editorial,dark Danger/error: status text,#FF6666,#3B1717,4.5,5.560189091999312,pass
+paper-editorial,dark Danger/error: status icon,#FF6666,#3B1717,3,5.560189091999312,pass
+paper-editorial,light Information: status text,#1D4ED8,#EFF6FF,4.5,6.157973971775643,pass
+paper-editorial,light Information: status icon,#1D4ED8,#EFF6FF,3,6.157973971775643,pass
+paper-editorial,dark Information: status text,#93C5FD,#17283B,4.5,8.299810978536046,pass
+paper-editorial,dark Information: status icon,#93C5FD,#17283B,3,8.299810978536046,pass
+paper-editorial,informational Oat notification: label,#000000,#DFD49A,4.5,14.021607238425982,pass
+paper-editorial,informational Oat notification: icon,#000000,#DFD49A,3,14.021607238425982,pass
+paper-editorial,light Blue category: label,#000000,#5AB8FF,4.5,9.734927748164832,pass
+paper-editorial,light Blue category: icon,#000000,#5AB8FF,3,9.734927748164832,pass
+paper-editorial,dark Blue category: label,#000000,#5AB8FF,4.5,9.734927748164832,pass
+paper-editorial,dark Blue category: icon,#000000,#5AB8FF,3,9.734927748164832,pass
+paper-editorial,light Lavender category: label,#000000,#9D8AFF,4.5,7.513011248493646,pass
+paper-editorial,light Lavender category: icon,#000000,#9D8AFF,3,7.513011248493646,pass
+paper-editorial,dark Lavender category: label,#000000,#9D8AFF,4.5,7.513011248493646,pass
+paper-editorial,dark Lavender category: icon,#000000,#9D8AFF,3,7.513011248493646,pass
+paper-editorial,light Green category: label,#000000,#30B588,4.5,8.090739778852315,pass
+paper-editorial,light Green category: icon,#000000,#30B588,3,8.090739778852315,pass
+paper-editorial,dark Green category: label,#000000,#30B588,4.5,8.090739778852315,pass
+paper-editorial,dark Green category: icon,#000000,#30B588,3,8.090739778852315,pass

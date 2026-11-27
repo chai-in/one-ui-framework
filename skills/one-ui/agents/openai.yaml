@@ -1,0 +1,6 @@
+interface:
+  display_name: "One UI"
+  short_description: "Accessible UI, tokens, spring motion, and design feedback"
+  default_prompt: "Use $one-ui to build or audit this interface with semantic tokens and accessible Kinetic UI Moments. Apply user design feedback locally and send reusable, scrubbed insights to the One UI baseline after checking open issues."
+policy:
+  allow_implicit_invocation: true

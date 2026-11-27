@@ -1,0 +1,264 @@
+/* Kinetic surfaces use [data-one-moment="<catalog slug>"]. The focus target stays still.
+   --one-position carries the live spring sample. Only pending progress can repeat. */
+@layer one.moments {
+  .one-widget {
+    --one-position: 0; --one-nearness: 0;
+    font: var(--one-type-control-weight) var(--one-type-control-size)/var(--one-type-control-line) var(--one-font-sans);
+    color: var(--one-color-text-primary);
+  }
+  [data-one-moment] {
+    --one-from: 0; --one-position: 0;
+    --one-kinetic-time: var(--one-duration-fast); --one-kinetic-ease: var(--one-ease);
+    --one-curve: var(--one-spring-tactile); --one-time: var(--one-spring-tactile-duration);
+  }
+  :is([data-one-motion="calm"] [data-one-moment], [data-one-moment][data-one-motion="calm"]) {
+    --one-kinetic-time: var(--one-duration-fast); --one-kinetic-ease: var(--one-ease);
+  }
+  :is([data-one-motion="tactile"] [data-one-moment], [data-one-moment][data-one-motion="tactile"]) {
+    --one-kinetic-time: var(--one-time); --one-kinetic-ease: var(--one-curve);
+  }
+  [data-one-moment]:is([data-one-moment="paper-plane"], [data-one-moment="bookmark"], [data-one-moment="menu-morph"],
+      [data-one-moment="blocks-scale"], [data-one-moment="odometer"], [data-one-moment="radial-menu"], [data-one-moment="checklist"]) {
+    --one-curve: var(--one-spring-snappy); --one-time: var(--one-spring-snappy-duration);
+  }
+  [data-one-moment]:is([data-one-moment="gooey-tab-bar"], [data-one-moment="stretch-toggle"], [data-one-moment="merge-drops"],
+      [data-one-moment="jelly-pad"], [data-one-moment="elastic-string"], [data-one-moment="worm-dots"],
+      [data-one-moment="rubber-search"], [data-one-moment="flip-coin"]) {
+    --one-curve: var(--one-spring-elastic); --one-time: var(--one-spring-elastic-duration);
+  }
+  [data-one-moment]:is([data-one-moment="detent-dial"], [data-one-moment="snap-grid"], [data-one-moment="swipe-confirm"],
+      [data-one-moment="rocker-switch"], [data-one-moment="scrub-wave"]) {
+    --one-curve: var(--one-spring-detent); --one-time: var(--one-spring-detent-duration);
+  }
+  [data-one-moment]:is([data-one-moment="bars-fade"], [data-one-moment="card-fan"], [data-one-moment="depth-stack"],
+      [data-one-moment="download-ring"], [data-one-moment="ink-switch"], [data-one-moment="tide-progress"],
+      [data-one-moment="eclipse-half"], [data-one-moment="dot-revolve"]) {
+    --one-curve: var(--one-spring-gentle); --one-time: var(--one-spring-gentle-duration);
+  }
+  .one-art { display: inline-block; inline-size: 3.2em; block-size: 2em; flex: none; fill: currentColor; vertical-align: middle; }
+  .one-art :is(.moving,.petal,.moon,.bar-a,.bar-c,.play,.pause) { transform-origin: 32px 20px; }
+  .one-art .track { fill: var(--one-color-surface); stroke: var(--one-color-border-strong); }
+  .one-art :is(.line,.outline,.meter,.cut) { fill: none; stroke: currentColor; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  .one-art .cut { stroke: var(--one-color-surface); }
+  .one-art .track-ring { stroke: var(--one-color-border-subtle); }
+  .one-option { display: inline-grid; justify-items: center; align-content: center; position: relative; }
+  .one-option-mark { position: absolute; inset-block-start: 0; inset-inline-end: .15em; visibility: hidden; }
+  .one-option:is([aria-selected="true"], [aria-checked="true"]) .one-option-mark { visibility: visible; }
+  .one-option[aria-checked="true"] { background: var(--one-color-selected); color: var(--one-color-on-selected); }
+  .one-options, .one-menu, .one-checks, .one-meter { display: flex; flex-wrap: wrap; align-items: center; gap: var(--one-action-gap); }
+  .one-tabs[aria-orientation="vertical"] { align-items: start; }
+  .one-menu { padding-block: var(--one-space-2); }
+  .one-widget [hidden] { display: none; }
+  .one-outcome:not(:empty) { margin-inline-start: var(--one-space-2); }
+  .one-meter { font-variant-numeric: tabular-nums; }
+  .one-range-label {
+    display: inline-grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: var(--one-space-2);
+    max-inline-size: 100%;
+    overflow-wrap: anywhere;
+  }
+  .one-range-label .one-art { inline-size: 5em; block-size: 3em; touch-action: none; cursor: grab; }
+  .one-range {
+    inline-size: 100%;
+    min-inline-size: 0;
+    min-block-size: var(--one-icon-target);
+    margin-inline: 0;
+    accent-color: var(--one-color-focus);
+  }
+  .one-check { display: inline-flex; align-items: center; min-block-size: var(--one-icon-target); gap: var(--one-space-1); }
+  .one-check input { accent-color: var(--one-color-focus); }
+  .one-visually-hidden { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  [data-one-moment="bars-fade"] .moving {
+    opacity: clamp(.25, calc(6 * var(--one-position) - var(--one-index)), 1);
+  }
+  [data-one-moment="bloom-toggle"] .petal { transform: translateY(calc(5px - 5px * var(--one-position))) scale(calc(.7 + .3 * var(--one-position))); }
+  :is([data-one-moment="snap-grid"], [data-one-moment="magnet-grid"]) .one-options {
+    display: grid; grid-template-columns: repeat(2, minmax(0, max-content));
+  }
+  [data-one-moment="snap-grid"] .moving { transform: scale(calc(.8 + .2 * var(--one-nearness))); }
+  [data-one-moment="card-fan"] .one-art { transform: translateY(calc(var(--one-lift) - 3px * var(--one-nearness))) rotate(var(--one-angle)); }
+  [data-one-moment="gooey-tab-bar"] .moving { transform: scaleX(calc(.7 + 1.4 * var(--one-nearness))); }
+  [data-one-moment="blocks-scale"] .moving {
+    transform-box: fill-box; transform-origin: center;
+    transform: scale(clamp(.3, calc(5 * var(--one-position) - var(--one-index)), 1));
+  }
+  [data-one-moment="stretch-toggle"] .moving { transform: translateX(calc(26px * var(--one-position))) scaleX(calc(1 + .2 * sin(var(--one-position) * 180deg))); }
+  [data-one-moment="merge-drops"] .drop-left { transform: translateX(calc(14px * var(--one-position))); }
+  [data-one-moment="merge-drops"] .drop-right { transform: translateX(calc(-14px * var(--one-position))); }
+  [data-one-moment="paper-plane"] .one-art { transform: translate(calc(9px * sin(var(--one-position) * 180deg)), calc(-5px * sin(var(--one-position) * 180deg))); }
+  [data-one-moment="detent-dial"] .moving { transform: rotate(calc(var(--one-arc, 350deg) * var(--one-position))); }
+  [data-one-moment="domino-row"] .moving {
+    transform-box: fill-box; transform-origin: center bottom;
+    transform: rotate(calc(47deg * clamp(0, 6 * var(--one-position) - var(--one-index), 1)));
+  }
+  [data-one-moment="pebble-rating"] .moving { transform: scale(calc(.65 + .35 * var(--one-nearness))); }
+  [data-one-moment="jelly-pad"] .moving { transform: scale(calc(1 + .15 * sin(var(--one-position) * 180deg)), calc(1 - .25 * sin(var(--one-position) * 180deg))); }
+  [data-one-moment="swipe-confirm"] button { touch-action: pan-y; }
+  [data-one-moment="swipe-confirm"] .moving { transform: translateX(calc(26px * var(--one-position))); }
+  [data-one-moment="bookmark"] .moving { transform: translateY(calc(3px * var(--one-position))); stroke: currentColor; }
+  [data-one-moment="bookmark"] [aria-pressed="false"] .moving { fill: none; }
+  [data-one-moment="depth-stack"] .moving { transform: translate(calc(4px * var(--one-nearness)), calc(-3px * var(--one-nearness))); }
+  [data-one-moment="menu-morph"] .bar-a { transform: rotate(calc(40deg * var(--one-position))) translateY(calc(10px * var(--one-position))); }
+  [data-one-moment="menu-morph"] .bar-b { opacity: calc(1 - var(--one-position)); }
+  [data-one-moment="menu-morph"] .bar-c { transform: rotate(calc(-40deg * var(--one-position))) translateY(calc(-10px * var(--one-position))); }
+  [data-one-moment="elastic-string"] .moving { transform: translateX(calc(-28px + 56px * var(--one-position))); }
+  [data-one-moment="ripple-pad"] .moving { transform: scale(calc(.5 + .5 * sin(var(--one-position) * 180deg))); }
+  [data-one-moment="worm-dots"] .moving { transform: scaleX(calc(.6 + .9 * var(--one-nearness))); }
+  [data-one-moment="download-ring"] .meter { transform: rotate(-90deg); transform-origin: 32px 20px; stroke-dasharray: 1; stroke-dashoffset: calc(1 - var(--one-position)); }
+  [data-one-moment="leaf-tabs"] .one-art { transform: rotate(calc(-18deg * var(--one-nearness))); }
+  [data-one-moment="bell-toggle"] .moving { transform-origin: 32px 8px; transform: rotate(calc(22deg * var(--one-position))); }
+  [data-one-moment="ink-switch"] .moving { transform: translateX(calc(18px * var(--one-position))) scaleX(calc(1 + .7 * var(--one-position))); }
+  [data-one-moment="rocker-switch"] .moving { transform: perspective(90px) rotateY(calc(-30deg + 60deg * var(--one-position))); }
+  [data-one-moment="scrub-wave"] .moving { transform: translateX(calc(56px * var(--one-position))); }
+  [data-one-moment="squash-play"] .play { transform: scale(calc(1 - var(--one-position))); }
+  [data-one-moment="squash-play"] .pause { transform: scale(var(--one-position)); }
+  [data-one-moment="rubber-search"] .one-art { transform: scaleX(var(--one-stretch, 1)); }
+  [data-one-moment="odometer"] { display: inline-flex; gap: var(--one-space-2); align-items: center; }
+  .one-odometer { display: inline-flex; font: 1.25em/1 var(--one-font-mono); font-variant-numeric: tabular-nums; }
+  .one-digit-window { display: inline-block; inline-size: 1ch; block-size: 1em; overflow: hidden; }
+  .one-digit-reel { display: block; word-break: break-all; line-height: 1; }
+  [data-one-moment="tide-progress"] .moving { clip-path: inset(calc(100% - var(--one-position) * 100%) 0 0); transform-box: fill-box; }
+  [data-one-moment="eclipse-half"] .moon { fill: var(--one-fill); transform: translateX(calc(14px * var(--one-position))); }
+  [data-one-moment="magnet-grid"] .one-art { transform: translate(var(--one-x, 0px), var(--one-y, 0px)) scale(calc(.9 + .1 * var(--one-nearness))); transition: transform var(--one-kinetic-time) var(--one-kinetic-ease); }
+  [data-one-moment="checklist"] .tick { stroke-dasharray: 32; stroke-dashoffset: 32; transition: stroke-dashoffset var(--one-kinetic-time) var(--one-kinetic-ease); }
+  [data-one-moment="checklist"] :checked + .one-art .tick { stroke-dashoffset: 0; }
+  [data-one-moment="flip-coin"] .one-art { transform: rotateY(calc(180deg * var(--one-position))); }
+  [data-one-moment="radial-menu"] .satellite { transform: translateY(calc(8px - 8px * var(--one-position))); }
+  .one-radial-target {
+    display: inline-grid; padding: 0; border: 0; border-radius: var(--one-radius-control);
+    background: transparent; font: inherit; cursor: pointer;
+  }
+  .one-radial-face {
+    display: grid; place-items: center; box-sizing: border-box; pointer-events: none;
+    animation: one-radial-open var(--one-kinetic-time) var(--one-kinetic-ease);
+  }
+  @keyframes one-radial-open { from { transform: translateY(-.2em) scale(.95); } to { transform: translate(0) scale(1); } }
+  [data-one-moment="dot-revolve"] .moving { transform: rotate(calc(360deg * var(--one-position))); }
+  @keyframes one-revolve { to { transform: rotate(1turn); } }
+  @keyframes one-bars { 50% { opacity: .35; } }
+  @keyframes one-blocks { 50% { transform: scale(.55); } }
+  @keyframes one-domino { 50% { transform: rotate(35deg); } }
+  @keyframes one-tide { 50% { transform: translateY(4px); } }
+  [data-one-moment="bars-fade"] [data-indeterminate] .moving { opacity: 1; animation: one-bars 1.2s ease-in-out infinite; }
+  [data-one-moment="blocks-scale"] [data-indeterminate] .moving { transform: scale(1); animation: one-blocks 1.2s ease-in-out infinite; }
+  [data-one-moment="domino-row"] [data-indeterminate] .moving { animation: one-domino 1.2s ease-in-out infinite; }
+  [data-one-moment="tide-progress"] [data-indeterminate] .moving { clip-path: inset(45% 0 0); animation: one-tide 1.4s ease-in-out infinite; }
+  [data-one-moment="download-ring"] [data-indeterminate] .meter { stroke-dashoffset: .65; animation: one-revolve 1.2s linear infinite; }
+  [data-one-moment="dot-revolve"] [data-indeterminate] .moving { animation: one-revolve 1.2s linear infinite; }
+  [data-one-moment] [data-indeterminate] g .moving { animation-delay: calc(var(--one-index) * -.12s); }
+  [data-one-motion="reduced"] :is(.one-art, .one-art *, .one-radial-face),
+  :host([data-one-motion="reduced"]) :is(.one-art, .one-art *, .one-radial-face) {
+    animation: none !important; transition: none !important;
+  }
+  [data-one-motion="reduced"] :is([data-one-moment="magnet-grid"], [data-one-moment="card-fan"], [data-one-moment="rubber-search"]) .one-art,
+  :is([data-one-moment="magnet-grid"], [data-one-moment="card-fan"], [data-one-moment="rubber-search"])[data-one-motion="reduced"] .one-art { transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    [data-one-moment] :is(.one-art, .one-art *, .one-radial-face) { animation: none !important; transition: none !important; }
+    :is([data-one-moment="magnet-grid"], [data-one-moment="card-fan"], [data-one-moment="rubber-search"]) .one-art { transform: none; }
+  }
+}
+
+@layer one.moments {
+  [data-one-moment="radial-menu"] { container-type: inline-size; }
+  @container (min-width: 22rem) {
+    .one-radial { position: relative; block-size: 12rem; max-inline-size: 24rem; }
+    .one-radial button {
+      position: absolute; inset-inline-start: 50%; inset-block-start: 50%;
+      max-inline-size: 7rem; overflow-wrap: anywhere;
+      transform: translate(calc(-50% + var(--one-menu-x) * 6.5rem), calc(-50% + var(--one-menu-y) * 4.2rem));
+    }
+    .one-radial .one-radial-face { animation-name: one-radial-expand; }
+  }
+  @keyframes one-radial-expand {
+    from { transform: translate(calc(var(--one-menu-x) * -6.5rem), calc(var(--one-menu-y) * -4.2rem)) scale(.8); }
+    to { transform: none; }
+  }
+  .one-option:disabled, .one-switch:disabled, .one-tab:disabled, .one-btn:disabled {
+    background: var(--one-color-disabled-fill); color: var(--one-color-disabled-text);
+  }
+}
+
+@layer one.moments {
+  /* Framework-independent, discrete feedback. Set --one-from to the previous
+     sample and add data-one-feedback to the decorative shape on a state change.
+     An omitted endpoint resolves to the shape's current underlying style. */
+  [data-one-moment] [data-one-feedback] {
+    animation: var(--one-feedback-name) var(--one-kinetic-time) var(--one-kinetic-ease) 1;
+  }
+  [data-one-moment="bars-fade"] { --one-feedback-name: one-bars-fade; }
+  @keyframes one-bars-fade { from { opacity: clamp(.25, calc(6 * var(--one-from) - var(--one-index)), 1); } }
+  [data-one-moment="bloom-toggle"] { --one-feedback-name: one-bloom-toggle; }
+  @keyframes one-bloom-toggle { from { transform: translateY(calc(5px - 5px * var(--one-from))) scale(calc(.7 + .3 * var(--one-from))); } }
+  [data-one-moment="snap-grid"] { --one-feedback-name: one-snap-grid; }
+  @keyframes one-snap-grid { from { transform: scale(calc(.8 + .2 * var(--one-from))); } }
+  [data-one-moment="card-fan"] { --one-feedback-name: one-card-fan; }
+  @keyframes one-card-fan { from { transform: translateY(calc(var(--one-lift) - 3px * var(--one-from))) rotate(var(--one-angle)); } }
+  [data-one-moment="gooey-tab-bar"] { --one-feedback-name: one-gooey-tab-bar; }
+  @keyframes one-gooey-tab-bar { from { transform: scaleX(calc(.7 + 1.4 * var(--one-from))); } }
+  [data-one-moment="blocks-scale"] { --one-feedback-name: one-blocks-scale; }
+  @keyframes one-blocks-scale { from { transform: scale(clamp(.3, calc(5 * var(--one-from) - var(--one-index)), 1)); } }
+  [data-one-moment="stretch-toggle"] { --one-feedback-name: one-stretch-toggle; }
+  @keyframes one-stretch-toggle { from { transform: translateX(calc(26px * var(--one-from))); } }
+  [data-one-moment="merge-drops"] { --one-feedback-name: one-merge-drops; }
+  @keyframes one-merge-drops { from { transform: translateX(0); } }
+  [data-one-moment="paper-plane"] { --one-feedback-name: one-paper-plane; }
+  @keyframes one-paper-plane { 50% { transform: translate(9px, -5px) rotate(-6deg); } }
+  [data-one-moment="detent-dial"] { --one-feedback-name: one-detent-dial; }
+  @keyframes one-detent-dial { from { transform: rotate(calc(var(--one-arc, 350deg) * var(--one-from))); } }
+  [data-one-moment="domino-row"] { --one-feedback-name: one-domino-row; }
+  @keyframes one-domino-row { from { transform: rotate(calc(47deg * clamp(0, 6 * var(--one-from) - var(--one-index), 1))); } }
+  [data-one-moment="pebble-rating"] { --one-feedback-name: one-pebble-rating; }
+  @keyframes one-pebble-rating { from { transform: scale(calc(.65 + .35 * var(--one-from))); } }
+  [data-one-moment="jelly-pad"] { --one-feedback-name: one-jelly-pad; }
+  @keyframes one-jelly-pad { 50% { transform: scale(1.15, .75); } }
+  [data-one-moment="swipe-confirm"] { --one-feedback-name: one-swipe-confirm; }
+  @keyframes one-swipe-confirm { from { transform: translateX(calc(26px * var(--one-from))); } }
+  [data-one-moment="bookmark"] { --one-feedback-name: one-bookmark; }
+  @keyframes one-bookmark { from { transform: translateY(calc(3px * var(--one-from))); } }
+  [data-one-moment="depth-stack"] { --one-feedback-name: one-depth-stack; }
+  @keyframes one-depth-stack { from { transform: translate(calc(4px * var(--one-from)), calc(-3px * var(--one-from))); } }
+  [data-one-moment="menu-morph"] { --one-feedback-name: one-menu-morph; }
+  @keyframes one-menu-morph { from { opacity: calc(1 - var(--one-from)); } }
+  [data-one-moment="elastic-string"] { --one-feedback-name: one-elastic-string; }
+  @keyframes one-elastic-string { from { transform: translateX(calc(-28px + 56px * var(--one-from))); } }
+  [data-one-moment="ripple-pad"] { --one-feedback-name: one-ripple-pad; }
+  @keyframes one-ripple-pad { from { transform: scale(.35); } 70% { transform: scale(1.1); } }
+  [data-one-moment="worm-dots"] { --one-feedback-name: one-worm-dots; }
+  @keyframes one-worm-dots { from { transform: scaleX(calc(.6 + .9 * var(--one-from))); } }
+  [data-one-moment="download-ring"] { --one-feedback-name: one-download-ring; }
+  @keyframes one-download-ring { from { stroke-dashoffset: calc(1 - var(--one-from)); } }
+  [data-one-moment="leaf-tabs"] { --one-feedback-name: one-leaf-tabs; }
+  @keyframes one-leaf-tabs { from { transform: rotate(calc(-18deg * var(--one-from))); } }
+  [data-one-moment="bell-toggle"] { --one-feedback-name: one-bell-toggle; }
+  @keyframes one-bell-toggle { from { transform: rotate(calc(22deg * var(--one-from))); } }
+  [data-one-moment="ink-switch"] { --one-feedback-name: one-ink-switch; }
+  @keyframes one-ink-switch { from { transform: translateX(calc(18px * var(--one-from))) scaleX(calc(1 + .7 * var(--one-from))); } }
+  [data-one-moment="rocker-switch"] { --one-feedback-name: one-rocker-switch; }
+  @keyframes one-rocker-switch { from { transform: perspective(90px) rotateY(calc(-30deg + 60deg * var(--one-from))); } }
+  [data-one-moment="scrub-wave"] { --one-feedback-name: one-scrub-wave; }
+  @keyframes one-scrub-wave { from { transform: translateX(calc(56px * var(--one-from))); } }
+  [data-one-moment="squash-play"] { --one-feedback-name: one-squash-play; }
+  @keyframes one-squash-play { from { transform: scale(var(--one-from)); } }
+  [data-one-moment="rubber-search"] { --one-feedback-name: one-rubber-search; }
+  @keyframes one-rubber-search { 50% { transform: scaleX(1.08); } }
+  [data-one-moment="odometer"] { --one-feedback-name: one-odometer; }
+  @keyframes one-odometer { from { transform: translateY(calc(-1em * var(--one-from))); } }
+  [data-one-moment="tide-progress"] { --one-feedback-name: one-tide-progress; }
+  @keyframes one-tide-progress { from { clip-path: inset(calc(100% - var(--one-from) * 100%) 0 0); } }
+  [data-one-moment="eclipse-half"] { --one-feedback-name: one-eclipse-half; }
+  @keyframes one-eclipse-half { from { transform: translateX(calc(14px * var(--one-from))); } }
+  [data-one-moment="magnet-grid"] { --one-feedback-name: one-magnet-grid; }
+  @keyframes one-magnet-grid { from { transform: translate(0) scale(.9); } }
+  [data-one-moment="checklist"] { --one-feedback-name: one-checklist; }
+  @keyframes one-checklist { from { stroke-dashoffset: calc(32 - 32 * var(--one-from)); } }
+  [data-one-moment="flip-coin"] { --one-feedback-name: one-flip-coin; }
+  @keyframes one-flip-coin { 50% { transform: rotateY(90deg); } }
+  [data-one-moment="radial-menu"] { --one-feedback-name: one-radial-menu; }
+  @keyframes one-radial-menu { from { transform: translateY(calc(8px - 8px * var(--one-from))); } }
+  [data-one-moment="dot-revolve"] { --one-feedback-name: one-dot-revolve; }
+  @keyframes one-dot-revolve { from { transform: rotate(calc(360deg * var(--one-from))); } }
+  [data-one-motion="reduced"] [data-one-feedback] { animation: none !important; }
+  @media (prefers-reduced-motion: reduce) { [data-one-moment] [data-one-feedback] { animation: none !important; } }
+}

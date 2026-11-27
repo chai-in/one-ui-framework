@@ -1,0 +1,18 @@
+{
+  "name": "@one-ui/cli",
+  "version": "1.0.0",
+  "description": "Install, inspect and verify One UI from the command line.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "engines": { "node": ">=22.18.0" },
+  "bin": { "one-ui": "./dist/bin.js" },
+  "files": ["dist", "src"],
+  "dependencies": { "@one-ui/core": "1.0.0" },
+  "devDependencies": { "@types/node": "^22.18.0", "typescript": "5.9.3" },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/bundle-assets.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/*.test.mjs",
+    "prepack": "npm run build"
+  }
+}

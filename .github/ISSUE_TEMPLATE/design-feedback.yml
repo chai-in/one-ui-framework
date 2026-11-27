@@ -1,0 +1,58 @@
+name: Design feedback
+description: Report a reusable design issue or improvement for the One UI baseline.
+labels: [design-feedback]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search [open design-feedback issues](https://github.com/chai-in/one-ui-framework/issues?q=is%3Aissue+is%3Aopen+label%3Adesign-feedback) first and add new evidence to a matching thread.
+        This repository is public. Remove secrets, private project details, and identifying evidence.
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Kind
+      options: [bug, improvement, change, pattern, a11y, docs]
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      multiple: true
+      options: [tokens, kinetic-moments, a11y, agent-ergonomics]
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      description: Choose the affected platforms or cross-platform for a shared baseline behavior.
+      multiple: true
+      options: [web, apple, android, flutter, cross-platform]
+  - type: input
+    id: law
+    attributes:
+      label: One UI rule
+      placeholder: ONE-11
+  - type: input
+    id: source-project
+    attributes:
+      label: Source project
+      description: Optional public name or anonymous project description.
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Describe the reusable scenario, the observed behavior, and its impact.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposal
+      description: Describe the baseline behavior that should change.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Describe what a maintainer can observe or test to confirm the fix.

@@ -1,0 +1,19 @@
+{
+  "name": "one-ui",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "engines": { "node": ">=22.18.0" },
+  "workspaces": ["packages/core", "packages/web", "packages/react", "packages/cli"],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "typecheck": "npm run typecheck --workspaces",
+    "test": "npm run test --workspaces && node --test tests/*.test.mjs",
+    "verify:tokens": "python3 skills/one-ui/scripts/verify_tokens.py --tokens tokens/one.tokens.json --check-sync skills/one-ui/assets/one.tokens.json --themes-dir tokens/themes --csv verification/accessibility-contrast.csv",
+    "audit": "python3 skills/one-ui/scripts/audit_ui.py platforms/web platforms/apple/Sources platforms/android platforms/flutter packages/web/src packages/react/src showcase",
+    "test:swift": "swift test --package-path platforms/apple",
+    "bench": "npm run bench --workspace=@one-ui/core && npm run size --workspace=@one-ui/web",
+    "check:all": "npm run build && npm run typecheck && npm run verify:tokens && npm run audit && npm test && npm run test:swift"
+  }
+}

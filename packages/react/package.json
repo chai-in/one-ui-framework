@@ -1,0 +1,29 @@
+{
+  "name": "@one-ui/react",
+  "version": "1.0.0",
+  "description": "Typed React controls, kinetic moments and spring hooks for One UI.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "sideEffects": ["**/*.css"],
+  "exports": {
+    ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" },
+    "./styles.css": "./dist/styles.css"
+  },
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "src"],
+  "dependencies": { "@one-ui/core": "1.0.0" },
+  "peerDependencies": { "react": ">=18.0.0", "react-dom": ">=18.0.0" },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "jsdom": "^26.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "typescript": "~5.9.3"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node scripts/styles.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p test/tsconfig.json",
+    "test": "node --test test/*.test.mjs",
+    "prepack": "npm run build && node scripts/pack-notices.mjs"
+  }
+}

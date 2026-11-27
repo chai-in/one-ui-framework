@@ -1,0 +1,22 @@
+{
+  "name": "@one-ui/core",
+  "version": "1.0.0",
+  "description": "One UI spring physics, gesture math, accessible themes and component catalog.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "sideEffects": false,
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "src"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test test/*.test.ts",
+    "bench": "node test/benchmark.ts",
+    "sync:theme": "node scripts/sync-theme.mjs",
+    "prepack": "npm run build && node scripts/pack-notices.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3"
+  }
+}

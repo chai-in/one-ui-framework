@@ -1,0 +1,988 @@
+{
+  "schemaVersion": 1,
+  "version": "1.0.0",
+  "controls": [
+    {
+      "id": "button",
+      "slug": "button",
+      "tagName": "one-button",
+      "name": "Button",
+      "category": "action",
+      "springPreset": "snappy",
+      "semanticRole": "button",
+      "ariaPattern": "Named native button. Activate with Enter or Space.",
+      "attributes": [
+        "label",
+        "disabled"
+      ],
+      "events": [
+        "click"
+      ],
+      "webEvents": [
+        "one-action"
+      ],
+      "reducedMotionBehavior": "Activate without travel."
+    },
+    {
+      "id": "field",
+      "slug": "field",
+      "tagName": "one-field",
+      "name": "Field",
+      "category": "input",
+      "springPreset": "gentle",
+      "semanticRole": "textbox",
+      "ariaPattern": "Native input with a persistent label and associated description or error.",
+      "attributes": [
+        "label",
+        "value",
+        "name",
+        "disabled",
+        "required"
+      ],
+      "events": [
+        "input",
+        "change"
+      ],
+      "webEvents": [
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Show the value, validation and focus state directly."
+    },
+    {
+      "id": "dialog",
+      "slug": "dialog",
+      "tagName": "one-dialog",
+      "name": "Dialog",
+      "category": "disclosure",
+      "springPreset": "gentle",
+      "semanticRole": "dialog",
+      "ariaPattern": "Named modal with initial focus, contained tab navigation, Escape dismissal and opener focus restoration.",
+      "attributes": [
+        "label",
+        "open"
+      ],
+      "events": [
+        "cancel",
+        "close"
+      ],
+      "webEvents": [
+        "one-toggle"
+      ],
+      "reducedMotionBehavior": "Open and close instantly with normal focus management."
+    },
+    {
+      "id": "popover",
+      "slug": "popover",
+      "tagName": "one-popover",
+      "name": "Popover",
+      "category": "disclosure",
+      "springPreset": "snappy",
+      "semanticRole": "group",
+      "ariaPattern": "Named disclosure with an associated invoker, expanded state, light dismissal and focus restoration.",
+      "attributes": [
+        "label",
+        "open"
+      ],
+      "events": [
+        "beforetoggle",
+        "toggle"
+      ],
+      "webEvents": [
+        "one-toggle"
+      ],
+      "reducedMotionBehavior": "Show or hide the content immediately."
+    },
+    {
+      "id": "choice-group",
+      "slug": "choice-group",
+      "tagName": "one-choice-group",
+      "name": "Choice Group",
+      "category": "action",
+      "springPreset": "tactile",
+      "semanticRole": "group",
+      "ariaPattern": "Label the decision group and each native action button. Preserve normal button navigation and activation.",
+      "attributes": [
+        "label",
+        "options",
+        "disabled"
+      ],
+      "events": [
+        "click"
+      ],
+      "webEvents": [
+        "one-action"
+      ],
+      "reducedMotionBehavior": "Present the result of the chosen action immediately."
+    },
+    {
+      "id": "badge",
+      "slug": "badge",
+      "tagName": "one-badge",
+      "name": "Badge",
+      "category": "feedback",
+      "springPreset": "gentle",
+      "semanticRole": "text",
+      "ariaPattern": "Expose badge text in the accessible name or description of the associated item.",
+      "attributes": [
+        "label",
+        "variant"
+      ],
+      "events": [],
+      "webEvents": [],
+      "reducedMotionBehavior": "Show the final label directly."
+    },
+    {
+      "id": "tabs",
+      "slug": "tabs",
+      "tagName": "one-tabs",
+      "name": "Tabs",
+      "category": "navigation",
+      "springPreset": "snappy",
+      "semanticRole": "tablist",
+      "ariaPattern": "Roving tabs with aria-selected, arrow keys and associated tabpanels.",
+      "attributes": [
+        "label",
+        "value",
+        "orientation"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-select",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Replace the active panel and marker immediately."
+    },
+    {
+      "id": "switch",
+      "slug": "switch",
+      "tagName": "one-switch",
+      "name": "Switch",
+      "category": "selection",
+      "springPreset": "tactile",
+      "semanticRole": "switch",
+      "ariaPattern": "Named switch with aria-checked. Toggle with Space.",
+      "attributes": [
+        "label",
+        "checked",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Set the thumb and checked state immediately."
+    }
+  ],
+  "moments": [
+    {
+      "id": "01",
+      "slug": "bars-fade",
+      "tagName": "one-bars-fade",
+      "name": "Bars Fade",
+      "category": "feedback",
+      "springPreset": "gentle",
+      "semanticRole": "progressbar",
+      "ariaPattern": "Named progress indicator with min, max and current value. Omit the value for indeterminate progress.",
+      "attributes": [
+        "label",
+        "value",
+        "max"
+      ],
+      "events": [],
+      "webEvents": [
+        "one-complete"
+      ],
+      "reducedMotionBehavior": "Show a static progress indicator and its accessible label."
+    },
+    {
+      "id": "02",
+      "slug": "bloom-toggle",
+      "tagName": "one-bloom-toggle",
+      "name": "Bloom Toggle",
+      "category": "selection",
+      "springPreset": "tactile",
+      "semanticRole": "switch",
+      "ariaPattern": "Named switch with aria-checked. Toggle with Space.",
+      "attributes": [
+        "label",
+        "checked",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Swap the checked marker instantly."
+    },
+    {
+      "id": "03",
+      "slug": "snap-grid",
+      "tagName": "one-snap-grid",
+      "name": "Snap Grid",
+      "category": "layout",
+      "springPreset": "detent",
+      "semanticRole": "radiogroup",
+      "ariaPattern": "Named radio group with one checked option and arrow-key selection.",
+      "attributes": [
+        "label",
+        "value",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-select",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Place the selection on its final grid cell."
+    },
+    {
+      "id": "04",
+      "slug": "card-fan",
+      "tagName": "one-card-fan",
+      "name": "Card Fan",
+      "category": "selection",
+      "springPreset": "gentle",
+      "semanticRole": "radiogroup",
+      "ariaPattern": "Named radio group with one checked option and arrow-key selection.",
+      "attributes": [
+        "label",
+        "value",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-select",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Keep cards stationary and mark the selected card."
+    },
+    {
+      "id": "05",
+      "slug": "gooey-tab-bar",
+      "tagName": "one-gooey-tab-bar",
+      "name": "Gooey Tab Bar",
+      "category": "navigation",
+      "springPreset": "elastic",
+      "semanticRole": "tablist",
+      "ariaPattern": "Roving tabs with aria-selected, arrow keys and associated tabpanels.",
+      "attributes": [
+        "label",
+        "value",
+        "orientation"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-select",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Move the active tab marker immediately."
+    },
+    {
+      "id": "06",
+      "slug": "blocks-scale",
+      "tagName": "one-blocks-scale",
+      "name": "Blocks Scale",
+      "category": "feedback",
+      "springPreset": "snappy",
+      "semanticRole": "progressbar",
+      "ariaPattern": "Named progress indicator with min, max and current value. Omit the value for indeterminate progress.",
+      "attributes": [
+        "label",
+        "value",
+        "max"
+      ],
+      "events": [],
+      "webEvents": [
+        "one-complete"
+      ],
+      "reducedMotionBehavior": "Show the current block count without scaling."
+    },
+    {
+      "id": "07",
+      "slug": "stretch-toggle",
+      "tagName": "one-stretch-toggle",
+      "name": "Stretch Toggle",
+      "category": "selection",
+      "springPreset": "elastic",
+      "semanticRole": "switch",
+      "ariaPattern": "Named switch with aria-checked. Toggle with Space.",
+      "attributes": [
+        "label",
+        "checked",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Set the final thumb position on change."
+    },
+    {
+      "id": "08",
+      "slug": "merge-drops",
+      "tagName": "one-merge-drops",
+      "name": "Merge Drops",
+      "category": "feedback",
+      "springPreset": "elastic",
+      "semanticRole": "status",
+      "ariaPattern": "Expose the final text in a polite atomic status region. Hide intermediate animation frames.",
+      "attributes": [
+        "label",
+        "value"
+      ],
+      "events": [],
+      "webEvents": [],
+      "reducedMotionBehavior": "Present the merged state and its text immediately."
+    },
+    {
+      "id": "09",
+      "slug": "paper-plane",
+      "tagName": "one-paper-plane",
+      "name": "Paper Plane",
+      "category": "action",
+      "springPreset": "snappy",
+      "semanticRole": "button",
+      "ariaPattern": "Named native button. Activate with Enter or Space.",
+      "attributes": [
+        "label",
+        "disabled"
+      ],
+      "events": [
+        "click"
+      ],
+      "webEvents": [
+        "one-send",
+        "one-action"
+      ],
+      "reducedMotionBehavior": "Show the send result without flight."
+    },
+    {
+      "id": "10",
+      "slug": "detent-dial",
+      "tagName": "one-detent-dial",
+      "name": "Detent Dial",
+      "category": "input",
+      "springPreset": "detent",
+      "semanticRole": "slider",
+      "ariaPattern": "Named range with min, max and current value. Arrow keys step and Home/End select endpoints.",
+      "attributes": [
+        "label",
+        "min",
+        "max",
+        "step",
+        "value",
+        "disabled"
+      ],
+      "events": [
+        "input",
+        "change"
+      ],
+      "webEvents": [
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Set the indicated detent directly."
+    },
+    {
+      "id": "11",
+      "slug": "domino-row",
+      "tagName": "one-domino-row",
+      "name": "Domino Row",
+      "category": "feedback",
+      "springPreset": "tactile",
+      "semanticRole": "progressbar",
+      "ariaPattern": "Named progress indicator with min, max and current value. Omit the value for indeterminate progress.",
+      "attributes": [
+        "label",
+        "value",
+        "max"
+      ],
+      "events": [],
+      "webEvents": [
+        "one-complete"
+      ],
+      "reducedMotionBehavior": "Set all completed segments at once."
+    },
+    {
+      "id": "12",
+      "slug": "pebble-rating",
+      "tagName": "one-pebble-rating",
+      "name": "Pebble Rating",
+      "category": "input",
+      "springPreset": "tactile",
+      "semanticRole": "radiogroup",
+      "ariaPattern": "Named radio group with one checked option and arrow-key selection.",
+      "attributes": [
+        "label",
+        "value",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-select",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Mark the selected rating immediately."
+    },
+    {
+      "id": "13",
+      "slug": "jelly-pad",
+      "tagName": "one-jelly-pad",
+      "name": "Jelly Pad",
+      "category": "action",
+      "springPreset": "elastic",
+      "semanticRole": "button",
+      "ariaPattern": "Named native button. Activate with Enter or Space.",
+      "attributes": [
+        "label",
+        "disabled"
+      ],
+      "events": [
+        "click"
+      ],
+      "webEvents": [
+        "one-action"
+      ],
+      "reducedMotionBehavior": "Use a static pressed state."
+    },
+    {
+      "id": "14",
+      "slug": "swipe-confirm",
+      "tagName": "one-swipe-confirm",
+      "name": "Swipe Confirm",
+      "category": "action",
+      "springPreset": "detent",
+      "semanticRole": "button",
+      "ariaPattern": "Named native button. Activate with Enter or Space.",
+      "attributes": [
+        "label",
+        "disabled"
+      ],
+      "events": [
+        "click"
+      ],
+      "webEvents": [
+        "one-confirm",
+        "one-action"
+      ],
+      "reducedMotionBehavior": "Commit immediately on activation and display confirmation."
+    },
+    {
+      "id": "15",
+      "slug": "bookmark",
+      "tagName": "one-bookmark",
+      "name": "Bookmark",
+      "category": "selection",
+      "springPreset": "snappy",
+      "semanticRole": "button",
+      "ariaPattern": "Named toggle button with aria-pressed and a stable label.",
+      "attributes": [
+        "label",
+        "pressed",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Swap the saved marker immediately."
+    },
+    {
+      "id": "16",
+      "slug": "depth-stack",
+      "tagName": "one-depth-stack",
+      "name": "Depth Stack",
+      "category": "layout",
+      "springPreset": "gentle",
+      "semanticRole": "radiogroup",
+      "ariaPattern": "Named radio group with one checked option and arrow-key selection.",
+      "attributes": [
+        "label",
+        "value",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-select",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Show the selected item without depth travel."
+    },
+    {
+      "id": "17",
+      "slug": "menu-morph",
+      "tagName": "one-menu-morph",
+      "name": "Menu Morph",
+      "category": "disclosure",
+      "springPreset": "snappy",
+      "semanticRole": "button",
+      "ariaPattern": "Menu button with aria-haspopup and aria-expanded. Arrow keys navigate menuitems and Escape restores focus.",
+      "attributes": [
+        "label",
+        "open",
+        "disabled"
+      ],
+      "events": [
+        "toggle",
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-select",
+        "one-action"
+      ],
+      "reducedMotionBehavior": "Switch the icon and menu visibility instantly."
+    },
+    {
+      "id": "18",
+      "slug": "elastic-string",
+      "tagName": "one-elastic-string",
+      "name": "Elastic String",
+      "category": "input",
+      "springPreset": "elastic",
+      "semanticRole": "slider",
+      "ariaPattern": "Named range with min, max and current value. Arrow keys step and Home/End select endpoints.",
+      "attributes": [
+        "label",
+        "min",
+        "max",
+        "step",
+        "value",
+        "disabled"
+      ],
+      "events": [
+        "input",
+        "change"
+      ],
+      "webEvents": [
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Update the value with a stationary track."
+    },
+    {
+      "id": "19",
+      "slug": "ripple-pad",
+      "tagName": "one-ripple-pad",
+      "name": "Ripple Pad",
+      "category": "action",
+      "springPreset": "tactile",
+      "semanticRole": "button",
+      "ariaPattern": "Named native button. Activate with Enter or Space.",
+      "attributes": [
+        "label",
+        "disabled"
+      ],
+      "events": [
+        "click"
+      ],
+      "webEvents": [
+        "one-action"
+      ],
+      "reducedMotionBehavior": "Indicate activation without an expanding ripple."
+    },
+    {
+      "id": "20",
+      "slug": "worm-dots",
+      "tagName": "one-worm-dots",
+      "name": "Worm Dots",
+      "category": "navigation",
+      "springPreset": "elastic",
+      "semanticRole": "tablist",
+      "ariaPattern": "Roving tabs with aria-selected, arrow keys and associated tabpanels.",
+      "attributes": [
+        "label",
+        "value",
+        "orientation"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-select",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Mark the current page without stretching."
+    },
+    {
+      "id": "21",
+      "slug": "download-ring",
+      "tagName": "one-download-ring",
+      "name": "Download Ring",
+      "category": "feedback",
+      "springPreset": "gentle",
+      "semanticRole": "progressbar",
+      "ariaPattern": "Named progress indicator with min, max and current value. Omit the value for indeterminate progress.",
+      "attributes": [
+        "label",
+        "value",
+        "max"
+      ],
+      "events": [],
+      "webEvents": [
+        "one-complete"
+      ],
+      "reducedMotionBehavior": "Update the ring to the current value immediately."
+    },
+    {
+      "id": "22",
+      "slug": "leaf-tabs",
+      "tagName": "one-leaf-tabs",
+      "name": "Leaf Tabs",
+      "category": "navigation",
+      "springPreset": "tactile",
+      "semanticRole": "tablist",
+      "ariaPattern": "Roving tabs with aria-selected, arrow keys and associated tabpanels.",
+      "attributes": [
+        "label",
+        "value",
+        "orientation"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-select",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Show the chosen tab and panel immediately."
+    },
+    {
+      "id": "23",
+      "slug": "bell-toggle",
+      "tagName": "one-bell-toggle",
+      "name": "Bell Toggle",
+      "category": "selection",
+      "springPreset": "tactile",
+      "semanticRole": "switch",
+      "ariaPattern": "Named switch with aria-checked. Toggle with Space.",
+      "attributes": [
+        "label",
+        "checked",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Use a stationary notification-state icon."
+    },
+    {
+      "id": "24",
+      "slug": "ink-switch",
+      "tagName": "one-ink-switch",
+      "name": "Ink Switch",
+      "category": "selection",
+      "springPreset": "gentle",
+      "semanticRole": "switch",
+      "ariaPattern": "Named switch with aria-checked. Toggle with Space.",
+      "attributes": [
+        "label",
+        "checked",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Show the checked state without spreading ink."
+    },
+    {
+      "id": "25",
+      "slug": "rocker-switch",
+      "tagName": "one-rocker-switch",
+      "name": "Rocker Switch",
+      "category": "selection",
+      "springPreset": "detent",
+      "semanticRole": "switch",
+      "ariaPattern": "Named switch with aria-checked. Toggle with Space.",
+      "attributes": [
+        "label",
+        "checked",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Set the labelled switch state immediately."
+    },
+    {
+      "id": "26",
+      "slug": "scrub-wave",
+      "tagName": "one-scrub-wave",
+      "name": "Scrub Wave",
+      "category": "input",
+      "springPreset": "detent",
+      "semanticRole": "slider",
+      "ariaPattern": "Named range with min, max and current value. Arrow keys step and Home/End select endpoints.",
+      "attributes": [
+        "label",
+        "min",
+        "max",
+        "step",
+        "value",
+        "disabled"
+      ],
+      "events": [
+        "input",
+        "change"
+      ],
+      "webEvents": [
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Update the playhead and time directly."
+    },
+    {
+      "id": "27",
+      "slug": "squash-play",
+      "tagName": "one-squash-play",
+      "name": "Squash Play",
+      "category": "action",
+      "springPreset": "tactile",
+      "semanticRole": "button",
+      "ariaPattern": "Named toggle button with aria-pressed and a stable label.",
+      "attributes": [
+        "label",
+        "pressed",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Switch playback state without scaling."
+    },
+    {
+      "id": "28",
+      "slug": "rubber-search",
+      "tagName": "one-rubber-search",
+      "name": "Rubber Search",
+      "category": "input",
+      "springPreset": "elastic",
+      "semanticRole": "searchbox",
+      "ariaPattern": "Named native search input. Preserve typing, selection and keyboard submission.",
+      "attributes": [
+        "label",
+        "value",
+        "placeholder",
+        "disabled"
+      ],
+      "events": [
+        "input",
+        "change"
+      ],
+      "webEvents": [
+        "one-change",
+        "one-action"
+      ],
+      "reducedMotionBehavior": "Keep the search field fixed while editing."
+    },
+    {
+      "id": "29",
+      "slug": "odometer",
+      "tagName": "one-odometer",
+      "name": "Odometer",
+      "category": "feedback",
+      "springPreset": "snappy",
+      "semanticRole": "status",
+      "ariaPattern": "Expose the final text in a polite atomic status region. Hide intermediate animation frames.",
+      "attributes": [
+        "label",
+        "value"
+      ],
+      "events": [],
+      "webEvents": [
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Display and expose the final number once."
+    },
+    {
+      "id": "30",
+      "slug": "tide-progress",
+      "tagName": "one-tide-progress",
+      "name": "Tide Progress",
+      "category": "feedback",
+      "springPreset": "gentle",
+      "semanticRole": "progressbar",
+      "ariaPattern": "Named progress indicator with min, max and current value. Omit the value for indeterminate progress.",
+      "attributes": [
+        "label",
+        "value",
+        "max"
+      ],
+      "events": [],
+      "webEvents": [
+        "one-complete"
+      ],
+      "reducedMotionBehavior": "Show the current fill level without waves."
+    },
+    {
+      "id": "31",
+      "slug": "eclipse-half",
+      "tagName": "one-eclipse-half",
+      "name": "Eclipse Half",
+      "category": "selection",
+      "springPreset": "gentle",
+      "semanticRole": "switch",
+      "ariaPattern": "Named switch with aria-checked. Toggle with Space.",
+      "attributes": [
+        "label",
+        "checked",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Show the chosen appearance immediately."
+    },
+    {
+      "id": "32",
+      "slug": "magnet-grid",
+      "tagName": "one-magnet-grid",
+      "name": "Magnet Grid",
+      "category": "selection",
+      "springPreset": "tactile",
+      "semanticRole": "radiogroup",
+      "ariaPattern": "Named radio group with one checked option and arrow-key selection.",
+      "attributes": [
+        "label",
+        "value",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-select",
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Keep items fixed and show the current selection."
+    },
+    {
+      "id": "33",
+      "slug": "checklist",
+      "tagName": "one-checklist",
+      "name": "Checklist",
+      "category": "selection",
+      "springPreset": "snappy",
+      "semanticRole": "group",
+      "ariaPattern": "Named group of labelled native checkboxes. Space toggles the focused item.",
+      "attributes": [
+        "label",
+        "disabled"
+      ],
+      "events": [
+        "change"
+      ],
+      "webEvents": [
+        "one-change"
+      ],
+      "reducedMotionBehavior": "Set checkbox markers immediately."
+    },
+    {
+      "id": "34",
+      "slug": "flip-coin",
+      "tagName": "one-flip-coin",
+      "name": "Flip Coin",
+      "category": "action",
+      "springPreset": "elastic",
+      "semanticRole": "button",
+      "ariaPattern": "Named native button. Activate with Enter or Space.",
+      "attributes": [
+        "label",
+        "disabled"
+      ],
+      "events": [
+        "click"
+      ],
+      "webEvents": [
+        "one-action"
+      ],
+      "reducedMotionBehavior": "Expose the chosen face immediately."
+    },
+    {
+      "id": "35",
+      "slug": "radial-menu",
+      "tagName": "one-radial-menu",
+      "name": "Radial Menu",
+      "category": "disclosure",
+      "springPreset": "snappy",
+      "semanticRole": "button",
+      "ariaPattern": "Menu button with aria-haspopup and aria-expanded. Arrow keys navigate menuitems and Escape restores focus.",
+      "attributes": [
+        "label",
+        "open",
+        "disabled"
+      ],
+      "events": [
+        "toggle",
+        "change"
+      ],
+      "webEvents": [
+        "one-toggle",
+        "one-select",
+        "one-action"
+      ],
+      "reducedMotionBehavior": "Show all menu items in their final positions."
+    },
+    {
+      "id": "36",
+      "slug": "dot-revolve",
+      "tagName": "one-dot-revolve",
+      "name": "Dot Revolve",
+      "category": "feedback",
+      "springPreset": "gentle",
+      "semanticRole": "progressbar",
+      "ariaPattern": "Named progress indicator with min, max and current value. Omit the value for indeterminate progress.",
+      "attributes": [
+        "label",
+        "value",
+        "max"
+      ],
+      "events": [],
+      "webEvents": [
+        "one-complete"
+      ],
+      "reducedMotionBehavior": "Use a stationary indicator while the operation is pending."
+    }
+  ]
+}

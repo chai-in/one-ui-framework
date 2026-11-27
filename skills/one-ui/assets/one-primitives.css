@@ -1,0 +1,346 @@
+/* One UI v1.0 — Baseline Web Primitives (Container Queries, Logical Properties, Focus Ring, Popover/Dialog)
+ * Import after `one-tokens.css`. Works standalone or alongside Tailwind CSS v4.
+ */
+
+@layer one.primitives {
+  html {
+    background-color: var(--one-color-canvas);
+    color: var(--one-color-text-primary);
+    font-family: var(--one-font-sans);
+    font-size: 100%;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    margin: 0;
+    min-inline-size: min(100%, var(--one-layout-min-width));
+    background-color: var(--one-color-canvas);
+    color: var(--one-color-text-primary);
+  }
+
+  /* Editorial headings */
+  .one-display {
+    font-size: var(--one-type-display-size-fluid, var(--one-type-display-size));
+    line-height: var(--one-type-display-line);
+    font-weight: var(--one-type-display-weight);
+    letter-spacing: var(--one-type-display-tracking);
+    text-wrap: balance;
+  }
+
+  .one-page-title {
+    font-size: var(--one-type-page-title-size-fluid, var(--one-type-page-title-size));
+    line-height: var(--one-type-page-title-line);
+    font-weight: var(--one-type-page-title-weight);
+    letter-spacing: var(--one-type-page-title-tracking);
+    text-wrap: balance;
+  }
+
+  .one-section-title {
+    font-size: var(--one-type-section-size);
+    line-height: var(--one-type-section-line);
+    font-weight: var(--one-type-section-weight);
+    letter-spacing: var(--one-type-section-tracking);
+    text-wrap: balance;
+  }
+
+  .one-reading {
+    font-size: var(--one-type-reading-size);
+    line-height: var(--one-type-reading-line);
+    max-inline-size: var(--one-reading-max);
+    text-wrap: pretty;
+  }
+
+  .one-tabular {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer one.primitives {
+  /* Full 2px perimeter focus ring outside 2px separating gap (3px in prefers-contrast: more) */
+  .one-focusable:focus-visible {
+    outline: var(--one-focus-width) solid var(--one-color-focus);
+    outline-offset: var(--one-focus-offset);
+    box-shadow: 0 0 0 var(--one-focus-offset) var(--one-color-focus-gap);
+  }
+
+  /* Semantic action button primitive */
+  .one-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--one-space-2);
+    min-block-size: var(--one-control-height);
+    padding-block: var(--one-space-2);
+    padding-inline: var(--one-space-4);
+    border-radius: var(--one-radius-control);
+    border: var(--one-action-border-width) solid var(--one-action-border-color);
+    font-family: inherit;
+    font-size: var(--one-type-control-size);
+    line-height: var(--one-type-control-line);
+    font-weight: var(--one-type-control-weight);
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    max-inline-size: 100%;
+    overflow-wrap: anywhere;
+    transition:
+      background-color var(--one-duration-fast) var(--one-ease),
+      border-color var(--one-duration-fast) var(--one-ease),
+      color var(--one-duration-fast) var(--one-ease);
+  }
+
+  .one-btn:focus-visible {
+    outline: var(--one-focus-width) solid var(--one-color-focus);
+    outline-offset: var(--one-focus-offset);
+    box-shadow: 0 0 0 var(--one-focus-offset) var(--one-color-focus-gap);
+  }
+
+  .one-btn {
+    --one-fill: var(--one-color-action);
+    --one-hover: var(--one-color-action-hover);
+    --one-active: var(--one-color-action-active);
+    background-color: var(--one-fill);
+    color: var(--one-color-on-action);
+  }
+  .one-btn[data-one-role="action"],
+  .one-btn:where(:not([data-one-role]))[data-role="action"] {
+    --one-fill: var(--one-color-action);
+    --one-hover: var(--one-color-action-hover);
+    --one-active: var(--one-color-action-active);
+    color: var(--one-color-on-action);
+  }
+  .one-btn[data-one-role="accept"],
+  .one-btn:where(:not([data-one-role]))[data-role="accept"] {
+    --one-fill: var(--one-color-accept);
+    --one-hover: var(--one-color-accept-hover);
+    --one-active: var(--one-color-accept-active);
+    color: var(--one-color-on-accept);
+  }
+  .one-btn[data-one-role="decline"],
+  .one-btn:where(:not([data-one-role]))[data-role="decline"] {
+    --one-fill: var(--one-color-decline);
+    --one-hover: var(--one-color-decline-hover);
+    --one-active: var(--one-color-decline-active);
+    color: var(--one-color-on-decline);
+  }
+  .one-btn[data-one-role="destructive"],
+  .one-btn:where(:not([data-one-role]))[data-role="destructive"] {
+    --one-fill: var(--one-color-destructive);
+    --one-hover: var(--one-color-destructive-hover);
+    --one-active: var(--one-color-destructive-active);
+    color: var(--one-color-on-destructive);
+  }
+  .one-btn[data-one-role="neutral"],
+  .one-btn:where(:not([data-one-role]))[data-role="neutral"] {
+    --one-fill: var(--one-color-neutral);
+    --one-hover: var(--one-color-neutral-hover);
+    --one-active: var(--one-color-neutral-active);
+    color: var(--one-color-on-neutral);
+  }
+  .one-btn[data-one-role="neutral"],
+  .one-btn:where(:not([data-one-role]))[data-role="neutral"] {
+    border: var(--one-neutral-action-border-width) solid var(--one-neutral-action-border-color);
+  }
+  @media (hover: hover) {
+    .one-btn:where(:hover:not(:disabled, [aria-disabled="true"], [aria-busy="true"])) {
+      background-color: var(--one-hover);
+    }
+  }
+  .one-btn:active:not(:disabled, [aria-disabled="true"], [aria-busy="true"]) {
+    background-color: var(--one-active);
+  }
+
+  /* Opaque disabled semantics: never opacity dimming */
+  .one-btn:disabled,
+  .one-btn[aria-disabled="true"]:not([aria-busy="true"]) {
+    background-color: var(--one-color-disabled-fill);
+    color: var(--one-color-disabled-text);
+    border-color: var(--one-color-border-subtle);
+    cursor: not-allowed;
+  }
+
+  /* Loading keeps semantic fill, label meaning, and width */
+  .one-btn[aria-busy="true"] {
+    cursor: progress;
+  }
+
+  /* Container-responsive choice group: stacks automatically when space is tight */
+  .one-choice-group {
+    container-type: inline-size;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--one-action-gap);
+  }
+
+  @container (inline-size < 22rem) {
+    .one-choice-group > *, .one-choice-group ::slotted(*) {
+      flex: 1 1 100%;
+    }
+  }
+
+  /* Editable field with essential boundary and >= 16px touch readability */
+  .one-field {
+    display: block;
+    inline-size: 100%;
+    min-block-size: var(--one-control-height);
+    padding-block: var(--one-space-2);
+    padding-inline: var(--one-space-3);
+    border-radius: var(--one-radius-control);
+    border: var(--one-field-border-width) solid var(--one-field-border-color);
+    background-color: var(--one-color-surface);
+    color: var(--one-color-text-primary);
+    font-family: inherit;
+    font-size: max(16px, var(--one-type-reading-size));
+    line-height: var(--one-type-reading-line);
+  }
+
+  .one-field::placeholder {
+    color: var(--one-color-placeholder);
+    opacity: 1;
+  }
+
+  .one-field:focus-visible {
+    outline: var(--one-focus-width) solid var(--one-color-focus);
+    outline-offset: var(--one-focus-offset);
+    box-shadow: 0 0 0 var(--one-focus-offset) var(--one-color-focus-gap);
+  }
+
+  .one-field[aria-invalid="true"] {
+    border-color: var(--one-color-danger-text);
+  }
+
+  /* Native top-layer reading dialog & popover */
+  dialog.one-dialog {
+    margin: auto;
+    inline-size: min(calc(100vw - var(--one-space-6)), var(--one-dialog-max-width));
+    max-block-size: var(--one-dialog-max-height);
+    padding: 0;
+    border: 1px solid var(--one-color-border-subtle);
+    border-radius: var(--one-radius-reading-dialog);
+    background-color: var(--one-color-surface);
+    color: var(--one-color-text-primary);
+    box-shadow: var(--one-shadow-dialog);
+    overflow: auto;
+  }
+
+  dialog.one-dialog::backdrop {
+    background-color: var(--one-color-overlay);
+  }
+
+  [popover].one-popover {
+    margin: auto;
+    padding: var(--one-space-3);
+    border: 1px solid var(--one-color-border-subtle);
+    border-radius: var(--one-radius-working-panel);
+    background-color: var(--one-color-surface);
+    color: var(--one-color-text-primary);
+    box-shadow: var(--one-shadow-popover);
+  }
+
+  /* Stable transcript/history scroller */
+  .one-scroller {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+
+  /* Status callouts (independent from action roles) */
+  .one-status {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--one-space-2);
+    padding: var(--one-space-3);
+    border-radius: var(--one-radius-control);
+    font-size: var(--one-type-control-size);
+    line-height: var(--one-type-control-line);
+  }
+  .one-status[data-status="success"] {
+    background-color: var(--one-color-success-fill);
+    color: var(--one-color-success-text);
+  }
+  .one-status[data-status="warning"] {
+    background-color: var(--one-color-warning-fill);
+    color: var(--one-color-warning-text);
+  }
+  .one-status[data-status="danger"] {
+    background-color: var(--one-color-danger-fill);
+    color: var(--one-color-danger-text);
+  }
+  .one-status[data-status="info"] {
+    background-color: var(--one-color-info-fill);
+    color: var(--one-color-info-text);
+  }
+
+  :where(.one-btn, .one-field, .one-tabs, .one-popover, .one-dialog) { box-sizing: border-box; }
+  .one-field-label, .one-field-wrap { display: grid; gap: var(--one-space-1); }
+  .one-field:disabled, .one-switch:disabled, .one-tab:disabled {
+    background: var(--one-color-disabled-fill); color: var(--one-color-disabled-text); cursor: not-allowed;
+  }
+  .one-badge {
+    display: inline-flex; align-items: center; padding: var(--one-space-1) var(--one-space-2);
+    border-radius: var(--one-radius-pill); background: var(--one-color-surface-raised);
+    color: var(--one-color-text-primary); font-size: var(--one-type-small-size);
+  }
+  .one-tabs { display: flex; flex-wrap: wrap; gap: var(--one-action-gap); }
+  .one-tabs[aria-orientation="vertical"] { flex-direction: column; align-items: start; }
+  .one-tab, .one-switch {
+    min-block-size: var(--one-control-height); min-inline-size: var(--one-icon-target);
+    padding-inline: var(--one-space-3); font: inherit; cursor: pointer;
+    background: var(--one-color-neutral); color: var(--one-color-on-neutral);
+    border: var(--one-neutral-action-border-width) solid var(--one-neutral-action-border-color);
+    border-radius: var(--one-radius-control);
+  }
+  .one-tab[aria-selected="true"], .one-switch[aria-checked="true"] {
+    background: var(--one-color-selected); color: var(--one-color-on-selected);
+  }
+  .one-tab[aria-selected="true"] { text-decoration: underline; text-underline-offset: .22em; }
+  .one-switch::before { content: "○"; margin-inline-end: var(--one-space-2); }
+  .one-switch[aria-checked="true"]::before { content: "●"; }
+  .one-field-wrap [data-one-state="error"] { color: var(--one-color-danger-text); }
+  .one-status:is([data-one-state="error"], [data-status="danger"]) {
+    background: var(--one-color-danger-fill); color: var(--one-color-danger-text);
+  }
+  .one-status:is([data-one-state="empty"], [data-one-state="offline"], [data-one-state="unavailable"],
+      [data-one-state="partial"], [data-one-state="cancelled"]) {
+    background: var(--one-color-info-fill); color: var(--one-color-info-text);
+  }
+  .one-status[data-one-state="completed"] { background: var(--one-color-success-fill); color: var(--one-color-success-text); }
+  .one-btn[aria-busy="true"] { position: relative; }
+  .one-btn[aria-busy="true"]::after {
+    content: ""; position: absolute; inset-block-end: 2px; inline-size: .75em;
+    block-size: 2px; background: currentColor;
+  }
+  [data-one-motion="reduced"] :is(.one-btn, .one-field), :host([data-one-motion="reduced"]) .one-btn { transition: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .one-btn, .one-field { transition: none; }
+  }
+}
+@layer one.primitives {
+  fieldset.one-choice-group { margin: 0; padding: 0; border: 0; min-inline-size: 0; }
+  .one-choice-group > slot { display: contents; }
+  .one-panel-body { display: grid; gap: var(--one-space-4); padding: var(--one-space-4); }
+  .one-panel-body > .one-btn { justify-self: end; }
+  .one-panel { margin-block-start: var(--one-space-3); }
+  .one-panel:focus-visible {
+    outline: var(--one-focus-width) solid var(--one-color-focus);
+    outline-offset: var(--one-focus-offset);
+  }
+  @container (inline-size < 22rem) {
+    .one-choice-group > slot > .one-btn { flex: 1 1 100%; }
+  }
+}
+@layer one.primitives {
+  :host { display: inline-block; max-inline-size: 100%; vertical-align: middle; }
+  :host(:is(one-field, one-tabs, one-choice-group, one-radial-menu, one-rubber-search)),
+  :host(one-moment:has([slot^="panel-"])) { display: block; }
+  :host([hidden]) { display: none; }
+  .one-btn[aria-busy="true"]::after {
+    box-sizing: border-box; inline-size: .6em; block-size: .6em;
+    inset-inline-end: .25em; inset-block-end: .25em;
+    border: 1px solid currentColor; border-inline-end-color: transparent;
+    border-radius: 50%; background: transparent; animation: one-busy-turn 1s linear infinite;
+  }
+  @keyframes one-busy-turn { to { transform: rotate(1turn); } }
+  [data-one-motion="reduced"] .one-btn[aria-busy="true"]::after { animation: none; }
+  @media (prefers-reduced-motion: reduce) { .one-btn[aria-busy="true"]::after { animation: none; } }
+}

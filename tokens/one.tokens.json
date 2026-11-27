@@ -1,0 +1,360 @@
+{
+  "schemaVersion": 3,
+  "name": "One UI",
+  "version": "1.0.0",
+  "status": "agent-first cross-platform specification; arithmetic checks verified, rendered and assistive acceptance belong to each consumer artifact",
+  "upstream": {
+    "name": "BoardUI free source",
+    "commit": "ec5c5eb3e29c2441be63b9422cd54f411ef23466",
+    "license": "MIT",
+    "font": {
+      "family": "Inter Variable 4.1",
+      "license": "SIL OFL 1.1",
+      "sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf"
+    }
+  },
+  "format": "Framework-neutral semantic role source. Exact sRGB hex values are the WCAG 2.2 luminance contract; OKLCH values are derived deterministically by generate_tokens.py.",
+  "policy": {
+    "actionBorder": "borderless-filled",
+    "actionBorderOptions": [
+      "borderless-filled",
+      "bordered"
+    ],
+    "actionBorderNote": "Owner-approved v0.2 refinement promoted to v0.3 default: filled custom action boxes omit decorative borders in both themes while retaining named labels/icons, full focus rings, neutral secondary action separation and essential editable-field boundaries. Consumers may opt into 'bordered' (1px borderStrong, 2px high-contrast) where explicit custom button edges are desired."
+  },
+  "color": {
+    "light": {
+      "canvas": "#ffffff",
+      "surface": "#ffffff",
+      "surfaceSubtle": "#f4f4f4",
+      "surfaceRaised": "#eaeaea",
+      "textPrimary": "#000000",
+      "textSecondary": "#595959",
+      "textMuted": "#595959",
+      "placeholder": "#595959",
+      "borderSubtle": "#dedede",
+      "borderControl": "#828282",
+      "borderStrong": "#595959",
+      "borderHighContrast": "#000000",
+      "action": "#dfd49a",
+      "actionHover": "#e7dfaf",
+      "actionActive": "#cfc184",
+      "onAction": "#000000",
+      "accept": "#3f7057",
+      "acceptHover": "#4a7a62",
+      "acceptActive": "#345e49",
+      "onAccept": "#ffffff",
+      "decline": "#d99090",
+      "declineHover": "#e1a4a4",
+      "declineActive": "#cb7f7f",
+      "onDecline": "#000000",
+      "destructive": "#ad4648",
+      "destructiveHover": "#b94f51",
+      "destructiveActive": "#983d40",
+      "onDestructive": "#ffffff",
+      "neutral": "#ffffff",
+      "neutralHover": "#f4f4f4",
+      "neutralActive": "#eaeaea",
+      "onNeutral": "#000000",
+      "selected": "#fbf5ce",
+      "onSelected": "#000000",
+      "focus": "#000000",
+      "focusGap": "#ffffff",
+      "disabledFill": "#eaeaea",
+      "disabledText": "#595959",
+      "categoryBlue": "#5ab8ff",
+      "categoryLavender": "#9d8aff",
+      "categoryGreen": "#30b588",
+      "onCategory": "#000000",
+      "successText": "#166534",
+      "successFill": "#f0fdf4",
+      "warningText": "#854d0e",
+      "warningFill": "#fffbea",
+      "dangerText": "#b91c1c",
+      "dangerFill": "#fff1f2",
+      "infoText": "#1d4ed8",
+      "infoFill": "#eff6ff",
+      "overlay": "#00000073"
+    },
+    "dark": {
+      "canvas": "#000000",
+      "surface": "#191919",
+      "surfaceSubtle": "#191919",
+      "surfaceRaised": "#212121",
+      "textPrimary": "#ffffff",
+      "textSecondary": "#c8c8c8",
+      "textMuted": "#959595",
+      "placeholder": "#959595",
+      "borderSubtle": "#323232",
+      "borderControl": "#828282",
+      "borderStrong": "#959595",
+      "borderHighContrast": "#ffffff",
+      "action": "#dfd49a",
+      "actionHover": "#e7dfaf",
+      "actionActive": "#cfc184",
+      "onAction": "#000000",
+      "accept": "#3f7057",
+      "acceptHover": "#4a7a62",
+      "acceptActive": "#345e49",
+      "onAccept": "#ffffff",
+      "decline": "#d99090",
+      "declineHover": "#e1a4a4",
+      "declineActive": "#cb7f7f",
+      "onDecline": "#000000",
+      "destructive": "#ad4648",
+      "destructiveHover": "#b94f51",
+      "destructiveActive": "#983d40",
+      "onDestructive": "#ffffff",
+      "neutral": "#191919",
+      "neutralHover": "#212121",
+      "neutralActive": "#323232",
+      "onNeutral": "#ffffff",
+      "selected": "#464029",
+      "onSelected": "#ffffff",
+      "focus": "#dfd49a",
+      "focusGap": "#000000",
+      "disabledFill": "#212121",
+      "disabledText": "#b8b8b8",
+      "categoryBlue": "#5ab8ff",
+      "categoryLavender": "#9d8aff",
+      "categoryGreen": "#30b588",
+      "onCategory": "#000000",
+      "successText": "#86efac",
+      "successFill": "#143322",
+      "warningText": "#fde68a",
+      "warningFill": "#332b12",
+      "dangerText": "#ff6666",
+      "dangerFill": "#3b1717",
+      "infoText": "#93c5fd",
+      "infoFill": "#17283b",
+      "overlay": "#00000099"
+    }
+  },
+  "type": {
+    "family": "'Inter Variable', Inter, ui-sans-serif, system-ui, -apple-system, sans-serif",
+    "mono": "ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace",
+    "appleFontName": "InterVariable",
+    "display": {
+      "size": 43,
+      "line": 48,
+      "weight": 300,
+      "trackingEm": -0.025,
+      "fluid": "clamp(1.9375rem, 1.45rem + 2.1vw, 2.6875rem)",
+      "appleRelativeTo": "largeTitle"
+    },
+    "pageTitle": {
+      "size": 31,
+      "line": 36,
+      "weight": 400,
+      "trackingEm": -0.02,
+      "fluid": "clamp(1.5rem, 1.25rem + 1.1vw, 1.9375rem)",
+      "appleRelativeTo": "largeTitle"
+    },
+    "section": {
+      "size": 24,
+      "line": 32,
+      "weight": 400,
+      "trackingEm": -0.015,
+      "appleRelativeTo": "title2"
+    },
+    "heading": {
+      "size": 20,
+      "line": 28,
+      "weight": 500,
+      "trackingEm": -0.01,
+      "appleRelativeTo": "headline"
+    },
+    "reading": {
+      "size": 16,
+      "line": 24,
+      "weight": 400,
+      "trackingEm": 0,
+      "appleRelativeTo": "body"
+    },
+    "longReading": {
+      "size": 18,
+      "line": 28,
+      "weight": 400,
+      "trackingEm": 0,
+      "appleRelativeTo": "body"
+    },
+    "control": {
+      "size": 14,
+      "line": 20,
+      "weight": 500,
+      "trackingEm": 0,
+      "appleRelativeTo": "callout"
+    },
+    "small": {
+      "size": 13,
+      "line": 18,
+      "weight": 400,
+      "trackingEm": 0,
+      "appleRelativeTo": "footnote"
+    },
+    "caption": {
+      "size": 12,
+      "line": 16,
+      "weight": 400,
+      "trackingEm": 0,
+      "appleRelativeTo": "caption"
+    }
+  },
+  "space": {
+    "0": 0,
+    "1": 4,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "5": 20,
+    "6": 24,
+    "8": 32,
+    "10": 40,
+    "12": 48,
+    "16": 64
+  },
+  "spaceAliases": {
+    "zero": 0,
+    "xxs": 4,
+    "xs": 8,
+    "sm": 12,
+    "md": 16,
+    "lg": 20,
+    "xl": 24,
+    "section": 32,
+    "display": 40,
+    "hero": 48,
+    "page": 64
+  },
+  "radius": {
+    "small": 6,
+    "control": 12,
+    "workingPanel": 12,
+    "readingDialog": 18,
+    "categoryPanel": 24,
+    "pill": 9999
+  },
+  "density": {
+    "comfortable": {
+      "controlHeight": 44,
+      "iconTarget": 44,
+      "rowMinHeight": 48,
+      "cellPaddingBlock": 12,
+      "actionGap": 8
+    },
+    "compact": {
+      "controlHeight": 36,
+      "iconTarget": 36,
+      "rowMinHeight": 40,
+      "cellPaddingBlock": 8,
+      "actionGap": 8
+    },
+    "coarsePointerMinTarget": 44
+  },
+  "layout": {
+    "minimumWidth": 320,
+    "compactBelow": 700,
+    "mediumBelow": 1024,
+    "wideFrom": 1280,
+    "readingMinCh": 45,
+    "readingMaxCh": 72,
+    "appleReadingMaxEm": 40,
+    "dialogMaxWidthRem": 56.25,
+    "dialogMaxHeightDvh": 90,
+    "contentMaxRem": 100
+  },
+  "motion": {
+    "fastMs": 150,
+    "standardMs": 200,
+    "maxUtilityMs": 300,
+    "ease": "cubic-bezier(.3, .06, .06, .79)",
+    "reduced": "Remove translation, animated scrolling, parallax, ambient loops, view-transition slide/scale and reveal concealment; retain all state meaning and actions.",
+    "springs": {
+      "snappy": {
+        "stiffness": 420,
+        "damping": 32,
+        "mass": 1,
+        "response": 0.31,
+        "dampingFraction": 0.78
+      },
+      "tactile": {
+        "stiffness": 360,
+        "damping": 24,
+        "mass": 1,
+        "response": 0.33,
+        "dampingFraction": 0.63
+      },
+      "elastic": {
+        "stiffness": 300,
+        "damping": 20,
+        "mass": 1,
+        "response": 0.36,
+        "dampingFraction": 0.58
+      },
+      "gentle": {
+        "stiffness": 220,
+        "damping": 26,
+        "mass": 1,
+        "response": 0.42,
+        "dampingFraction": 0.88
+      },
+      "detent": {
+        "stiffness": 520,
+        "damping": 38,
+        "mass": 1,
+        "response": 0.28,
+        "dampingFraction": 0.83
+      }
+    },
+    "defaultProfile": "calm",
+    "profiles": {
+      "calm": {
+        "spring": null,
+        "utilityMs": 200,
+        "translation": false,
+        "scale": false,
+        "ambient": false
+      },
+      "tactile": {
+        "spring": "tactile",
+        "utilityMs": 200,
+        "translation": true,
+        "scale": true,
+        "ambient": false
+      },
+      "reduced": {
+        "spring": null,
+        "utilityMs": 0,
+        "translation": false,
+        "scale": false,
+        "ambient": false
+      }
+    }
+  },
+  "focus": {
+    "width": 2,
+    "highContrastWidth": 3,
+    "offset": 2,
+    "fieldBorderWidth": 1,
+    "fieldHighContrastBorderWidth": 2,
+    "minContrast": 3
+  },
+  "elevation": {
+    "base": "none",
+    "popover": "0 8px 24px rgb(0 0 0 / 0.10)",
+    "dialog": "0 16px 48px rgb(0 0 0 / 0.20)"
+  },
+  "webVitals": {
+    "lcpMaxMs": 2500,
+    "inpMaxMs": 200,
+    "clsMax": 0.1
+  },
+  "implementationNotes": [
+    "Use semantic roles at every call site; never reference raw palette names (Oat, Evergreen, Soft red, Muted red, Blue/Lavender/Green) or hex values in feature code.",
+    "Assign product-specific meanings to categoryBlue/categoryLavender/categoryGreen only once inside the consumer adapter or token generator.",
+    "Filled custom actions omit decorative borders by default (policy.actionBorder='borderless-filled'); essential editable-field boundaries and full 2px/3px focus rings remain mandatory.",
+    "Evergreen (#3f7057) and Muted red (#ad4648) have 1.02:1 luminance separation; action names and distinct symbols carry primary decision meaning.",
+    "Arithmetic luminance checks verify solid color pairs only; they do not certify rendered compositing, typography legibility, keyboard flow or assistive technology acceptance."
+  ],
+  "license": "AGPL-3.0-only"
+}

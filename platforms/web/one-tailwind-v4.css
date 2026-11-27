@@ -1,0 +1,85 @@
+/* One UI v1.0.0 — Generated Tailwind CSS v4 @theme Bridge */
+/* Import after `@import "tailwindcss";` and `@import "./one-tokens.css";`. */
+/* Source of truth: tokens/one.tokens.json — regenerate with generate_tokens.py. */
+
+@theme inline {
+  /* Semantic Color Roles (prefixed `one-*` to coexist cleanly or map to project tokens) */
+  --color-one-canvas: var(--one-color-canvas);
+  --color-one-surface: var(--one-color-surface);
+  --color-one-surface-subtle: var(--one-color-surface-subtle);
+  --color-one-surface-raised: var(--one-color-surface-raised);
+  --color-one-text-primary: var(--one-color-text-primary);
+  --color-one-text-secondary: var(--one-color-text-secondary);
+  --color-one-text-muted: var(--one-color-text-muted);
+  --color-one-placeholder: var(--one-color-placeholder);
+  --color-one-border-subtle: var(--one-color-border-subtle);
+  --color-one-border-control: var(--one-color-border-control);
+  --color-one-border-strong: var(--one-color-border-strong);
+  --color-one-border-high-contrast: var(--one-color-border-high-contrast);
+  --color-one-action: var(--one-color-action);
+  --color-one-action-hover: var(--one-color-action-hover);
+  --color-one-action-active: var(--one-color-action-active);
+  --color-one-on-action: var(--one-color-on-action);
+  --color-one-accept: var(--one-color-accept);
+  --color-one-accept-hover: var(--one-color-accept-hover);
+  --color-one-accept-active: var(--one-color-accept-active);
+  --color-one-on-accept: var(--one-color-on-accept);
+  --color-one-decline: var(--one-color-decline);
+  --color-one-decline-hover: var(--one-color-decline-hover);
+  --color-one-decline-active: var(--one-color-decline-active);
+  --color-one-on-decline: var(--one-color-on-decline);
+  --color-one-destructive: var(--one-color-destructive);
+  --color-one-destructive-hover: var(--one-color-destructive-hover);
+  --color-one-destructive-active: var(--one-color-destructive-active);
+  --color-one-on-destructive: var(--one-color-on-destructive);
+  --color-one-neutral: var(--one-color-neutral);
+  --color-one-neutral-hover: var(--one-color-neutral-hover);
+  --color-one-neutral-active: var(--one-color-neutral-active);
+  --color-one-on-neutral: var(--one-color-on-neutral);
+  --color-one-selected: var(--one-color-selected);
+  --color-one-on-selected: var(--one-color-on-selected);
+  --color-one-focus: var(--one-color-focus);
+  --color-one-focus-gap: var(--one-color-focus-gap);
+  --color-one-disabled-fill: var(--one-color-disabled-fill);
+  --color-one-disabled-text: var(--one-color-disabled-text);
+  --color-one-category-blue: var(--one-color-category-blue);
+  --color-one-category-lavender: var(--one-color-category-lavender);
+  --color-one-category-green: var(--one-color-category-green);
+  --color-one-on-category: var(--one-color-on-category);
+  --color-one-success-text: var(--one-color-success-text);
+  --color-one-success-fill: var(--one-color-success-fill);
+  --color-one-warning-text: var(--one-color-warning-text);
+  --color-one-warning-fill: var(--one-color-warning-fill);
+  --color-one-danger-text: var(--one-color-danger-text);
+  --color-one-danger-fill: var(--one-color-danger-fill);
+  --color-one-info-text: var(--one-color-info-text);
+  --color-one-info-fill: var(--one-color-info-fill);
+  --color-one-overlay: var(--one-color-overlay);
+
+  /* Typography */
+  --font-sans: var(--one-font-sans);
+  --font-mono: var(--one-font-mono);
+
+  /* Radii */
+  --radius-one-small: var(--one-radius-small);
+  --radius-one-control: var(--one-radius-control);
+  --radius-one-working-panel: var(--one-radius-working-panel);
+  --radius-one-reading-dialog: var(--one-radius-reading-dialog);
+  --radius-one-category-panel: var(--one-radius-category-panel);
+  --radius-one-pill: var(--one-radius-pill);
+  --ease-one-snappy: var(--one-spring-snappy);
+  --ease-one-tactile: var(--one-spring-tactile);
+  --ease-one-elastic: var(--one-spring-elastic);
+  --ease-one-gentle: var(--one-spring-gentle);
+  --ease-one-detent: var(--one-spring-detent);
+
+  /* Motion */
+  --ease-one: var(--one-ease);
+
+  /* Shadows */
+  --shadow-one-popover: var(--one-shadow-popover);
+  --shadow-one-dialog: var(--one-shadow-dialog);
+}
+
+/* Explicit dark mode variant matching both OS preference and [data-one-theme='dark'] */
+@custom-variant dark (&:where([data-one-theme="dark"], [data-one-theme="dark"] *));

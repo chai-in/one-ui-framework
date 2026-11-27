@@ -1,0 +1,208 @@
+@layer one.components {
+  .one-provider { background: var(--one-color-canvas); color: var(--one-color-text-primary); }
+  :where(.one-button, .one-field, .one-switch, .one-badge, .one-dialog, .one-popover, .one-tabs, .one-moment) {
+    font-family: var(--one-font-sans);
+    color: var(--one-color-text-primary);
+    font-variant-numeric: tabular-nums;
+  }
+  :where(.one-button, .one-switch, button.one-moment, .one-tabs [role=tab], .one-moment button) {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--one-action-gap);
+    min-block-size: var(--one-control-height);
+    min-inline-size: min(100%, var(--one-icon-target));
+    max-inline-size: 100%;
+    overflow-wrap: anywhere;
+    padding: var(--one-space-2) var(--one-space-3);
+    border-radius: var(--one-radius-control);
+    font: var(--one-type-control-weight) var(--one-type-control-size)/var(--one-type-control-line) var(--one-font-sans);
+    color: var(--one-color-on-neutral);
+    border: var(--one-neutral-action-border-width) solid var(--one-neutral-action-border-color);
+    background: var(--one-color-neutral);
+    cursor: pointer;
+  }
+  .one-button {
+    --one-fill: var(--one-color-action);
+    --one-hover: var(--one-color-action-hover);
+    --one-active: var(--one-color-action-active);
+    --one-label: var(--one-color-on-action);
+    color: var(--one-label);
+    background: var(--one-fill);
+    border: var(--one-action-border-width) solid var(--one-action-border-color);
+  }
+  .one-button[data-one-variant=accept] {
+    --one-fill: var(--one-color-accept);
+    --one-hover: var(--one-color-accept-hover);
+    --one-active: var(--one-color-accept-active);
+    --one-label: var(--one-color-on-accept);
+  }
+  .one-button[data-one-variant=decline] {
+    --one-fill: var(--one-color-decline);
+    --one-hover: var(--one-color-decline-hover);
+    --one-active: var(--one-color-decline-active);
+    --one-label: var(--one-color-on-decline);
+  }
+  .one-button[data-one-variant=destructive] {
+    --one-fill: var(--one-color-destructive);
+    --one-hover: var(--one-color-destructive-hover);
+    --one-active: var(--one-color-destructive-active);
+    --one-label: var(--one-color-on-destructive);
+  }
+  .one-button[data-one-variant=neutral] {
+    --one-fill: var(--one-color-neutral);
+    --one-hover: var(--one-color-neutral-hover);
+    --one-active: var(--one-color-neutral-active);
+    --one-label: var(--one-color-on-neutral);
+    border: var(--one-neutral-action-border-width) solid var(--one-neutral-action-border-color);
+  }
+  @media (hover: hover) {
+    :where(.one-button, .one-switch, button.one-moment, .one-tabs button, .one-moment button):enabled:not([aria-disabled=true]):hover {
+      background: var(--one-hover, var(--one-color-neutral-hover));
+    }
+  }
+  :where(.one-button, .one-switch, button.one-moment, .one-tabs button, .one-moment button):enabled:not([aria-disabled=true]):active {
+    background: var(--one-active, var(--one-color-neutral-active));
+  }
+  :is(.one-switch, .one-moment, .one-tabs button):is([aria-checked=true], [aria-selected=true], [aria-pressed=true]) {
+    background: var(--one-color-selected);
+    color: var(--one-color-on-selected);
+  }
+  :is(.one-switch, .one-input, .one-moment, .one-tabs button, .one-moment button, .one-moment input, .one-button):is(:disabled, [aria-disabled=true]):not([aria-busy=true]) {
+    background: var(--one-color-disabled-fill);
+    color: var(--one-color-disabled-text);
+    cursor: default;
+  }
+  :is(.one-button, .one-switch, .one-input, .one-moment, .one-moment input, .one-moment button, .one-tabs [role=tab], .one-tabs [role=tabpanel]):focus-visible {
+    outline: var(--one-focus-width) solid var(--one-color-focus);
+    outline-offset: var(--one-focus-offset);
+    box-shadow: 0 0 0 var(--one-focus-offset) var(--one-color-focus-gap);
+  }
+  .one-choice-group, .one-tabs [role=tablist], .one-action-result {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--one-action-gap);
+  }
+  .one-tabs [aria-orientation=vertical] { flex-direction: column; align-items: start; }
+  .one-tabs [role=tab][aria-selected=true] { text-decoration: underline; text-underline-offset: .2em; }
+  .one-field { display: grid; gap: var(--one-space-1); }
+  .one-input, .one-rubber-search input {
+    box-sizing: border-box;
+    min-block-size: var(--one-control-height);
+    padding: var(--one-space-2) var(--one-space-3);
+    font: inherit;
+    font-size: var(--one-type-reading-size);
+    background: var(--one-color-surface);
+    color: var(--one-color-text-primary);
+    border: var(--one-field-border-width) solid var(--one-field-border-color);
+    border-radius: var(--one-radius-control);
+  }
+  .one-input::placeholder, .one-rubber-search input::placeholder { color: var(--one-color-placeholder); }
+  .one-field-error { color: var(--one-color-danger-text); }
+  .one-badge {
+    display: inline-block;
+    padding: var(--one-space-1) var(--one-space-2);
+    border-radius: var(--one-radius-pill);
+    background: var(--one-color-surface-subtle);
+    font-size: var(--one-type-small-size);
+  }
+  .one-badge[data-one-variant=success] { background: var(--one-color-success-fill); color: var(--one-color-success-text); }
+  .one-badge[data-one-variant=warning] { background: var(--one-color-warning-fill); color: var(--one-color-warning-text); }
+  .one-badge[data-one-variant=danger] { background: var(--one-color-danger-fill); color: var(--one-color-danger-text); }
+  .one-badge[data-one-variant=info] { background: var(--one-color-info-fill); color: var(--one-color-info-text); }
+  .one-badge[data-one-variant^=category] { color: var(--one-color-on-category); }
+  .one-badge[data-one-variant=category-blue] { background: var(--one-color-category-blue); }
+  .one-badge[data-one-variant=category-green] { background: var(--one-color-category-green); }
+  .one-badge[data-one-variant=category-lavender] { background: var(--one-color-category-lavender); }
+  .one-switch-track, :is(.one-bloom-toggle, .one-stretch-toggle, .one-ink-switch) .one-mark {
+    display: inline-flex;
+    inline-size: 2em;
+    block-size: 1em;
+    border-radius: var(--one-radius-pill);
+    border: var(--one-field-border-width) solid currentColor;
+    align-items: center;
+  }
+  .one-switch-track i, :is(.one-bloom-toggle, .one-stretch-toggle, .one-ink-switch) .one-mark i {
+    display: block;
+    border-radius: inherit;
+    inline-size: 1em;
+    block-size: 1em;
+    background: currentColor;
+    transform: translateX(calc(100% * var(--one-position, 0)));
+  }
+  .one-switch[aria-checked=true] { --one-position: 1; }
+  .one-stretch-toggle .one-mark i { transform: translateX(calc(100% * var(--one-position))) scaleX(calc(1 + .15 * var(--one-position))); }
+  .one-bloom-toggle .one-mark i { transform: translateX(calc(100% * var(--one-position))) scale(calc(.72 + .28 * var(--one-position))); }
+  .one-ink-switch .one-mark i { transform-origin: left; transform: scaleX(calc(.5 + 1.5 * var(--one-position))); }
+  .one-bell-toggle .one-mark { transform: rotate(calc(-18deg * var(--one-position))); }
+  .one-rocker-switch .one-mark { transform: perspective(4em) rotateX(calc(30deg * var(--one-position))); }
+  .one-eclipse-half .one-mark { transform: rotate(calc(180deg * var(--one-position))); }
+  .one-squash-play .one-mark { transform: scaleX(calc(1 - .15 * var(--one-position))); }
+  .one-bookmark .one-mark { transform: translateY(calc(12% * var(--one-position))); }
+  .one-dialog, .one-popover-panel {
+    border: var(--one-field-border-width) solid var(--one-color-border-strong);
+    border-radius: var(--one-radius-reading-dialog);
+    background: var(--one-color-surface-raised);
+    color: var(--one-color-text-primary);
+    padding: var(--one-space-4);
+  }
+  .one-dialog { max-inline-size: min(90vw, var(--one-dialog-max-width)); max-block-size: var(--one-dialog-max-height); }
+  .one-dialog::backdrop { background: var(--one-color-overlay); }
+  .one-popover { position: relative; display: inline-block; }
+  .one-popover-panel { position: absolute; z-index: 1; inline-size: max-content; max-inline-size: min(90vw, var(--one-reading-max)); }
+  .one-mark { display: inline-flex; align-items: center; justify-content: center; flex: none; }
+  .one-moment:is(label, [role=status], [role=progressbar]), .one-moment label {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--one-space-2);
+  }
+  fieldset.one-moment { border: var(--one-field-border-width) solid var(--one-color-border-control); border-radius: var(--one-radius-control); }
+  .one-moment label { min-block-size: var(--one-control-height); padding-inline: var(--one-space-2); }
+  .one-moment input { accent-color: var(--one-color-focus); }
+  .one-moment [data-selected=true] { background: var(--one-color-selected); color: var(--one-color-on-selected); }
+  .one-moment [role=menu]:not([hidden]) { display: flex; gap: var(--one-action-gap); flex-wrap: wrap; }
+  .one-swipe-confirm { touch-action: pan-y; }
+  .one-bell-toggle[aria-checked=true] .one-mark, .one-bookmark[aria-pressed=true] .one-mark { text-decoration: underline; }
+  .one-options { display: flex; align-items: center; gap: var(--one-action-gap); flex-wrap: wrap; }
+  :is(.one-snap-grid, .one-magnet-grid) .one-options { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .one-options .one-mark i { display: block; inline-size: .85em; block-size: .85em; background: currentColor; border-radius: var(--one-radius-small); }
+  .one-card-fan .one-mark i, .one-depth-stack .one-mark i { inline-size: 1.2em; block-size: 1.5em; border-radius: .15em; }
+  .one-depth-stack .one-mark i { box-shadow: -.15em .15em var(--one-color-surface), -.22em .22em currentColor; }
+  .one-pebble-rating .one-mark i { border-radius: 50% 65% 45% 40%; }
+  .one-magnet-grid .one-mark i, .one-worm-dots .one-mark { border-radius: 50%; }
+  :is(.one-leaf-tabs, .one-worm-dots, .one-gooey-tab-bar) .one-mark { background: currentColor; inline-size: .8em; block-size: .8em; }
+  .one-leaf-tabs .one-mark { border-radius: 80% 0; }
+  .one-gooey-tab-bar .one-mark { border-radius: var(--one-radius-pill); inline-size: 1.2em; }
+  .one-bookmark .one-mark i { inline-size: .8em; block-size: 1.15em; background: currentColor; clip-path: polygon(0 0,100% 0,100% 100%,50% 75%,0 100%); }
+  .one-bell-toggle .one-mark i { position: relative; inline-size: .85em; block-size: 1em; border-radius: 60% 60% 15% 15%; background: currentColor; }
+  .one-bell-toggle .one-mark i::after { content: ''; position: absolute; inset: 100% 30% auto; block-size: .17em; border-radius: 50%; background: inherit; }
+  .one-moment [role=menu][data-radial=true]:not([hidden]) { display: inline-grid; grid-template-columns: repeat(3, auto); }
+  .one-button[aria-busy=true] { text-decoration: underline dotted; text-underline-offset: .22em; cursor: progress; }
+  .one-wheel { display: inline-block; overflow: hidden; block-size: 1em; line-height: 1; }
+  .one-wheel i, .one-wheel i span { display: block; }
+  .one-swipe-confirm .one-mark { min-inline-size: 1em; }
+  .one-moment[role=progressbar] .one-mark, .one-merge-drops .one-mark { gap: var(--one-space-1); }
+  :is(.one-bars-fade,.one-domino-row,.one-blocks-scale,.one-dot-revolve,.one-merge-drops) .one-mark i {
+    display: block; inline-size: .5em; block-size: 1em; background: currentColor;
+  }
+  .one-blocks-scale .one-mark i { block-size: .5em; }
+  .one-domino-row .one-mark i { transform-origin: bottom; }
+  .one-download-ring svg { inline-size: 1.5em; fill: none; stroke: currentColor; stroke-width: 2; transform: rotate(-90deg); }
+  .one-tide-progress svg { display: block; inline-size: 100%; block-size: 100%; fill: currentColor; }
+  .one-tide-progress .one-mark { inline-size: 2.5em; block-size: 1.25em; overflow: hidden; border: var(--one-field-border-width) solid currentColor; }
+  .one-checklist > .one-mark { inline-size: 3em; block-size: .6em; border: var(--one-field-border-width) solid currentColor; }
+  .one-checklist .one-mark i { inline-size: 100%; block-size: 100%; background: currentColor; transform-origin: left; }
+  .one-merge-drops .one-mark i { border-radius: 50%; inline-size: 1em; transform: translateX(calc(55% * var(--one-position))); }
+  .one-merge-drops .one-mark i + i { transform: translateX(calc(-55% * var(--one-position))); }
+  .one-dot-revolve .one-mark { inline-size: 1.5em; block-size: 1.5em; position: relative; }
+  .one-dot-revolve .one-mark i { position: absolute; border-radius: 50%; inline-size: .5em; block-size: .5em; }
+  .one-odometer i { font-style: normal; }
+  .one-sr-only { position: absolute; inline-size: 1px; block-size: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  @media (prefers-reduced-motion: no-preference) {
+    .one-moment[data-animate=true] .one-mark { animation: one-pending-sweep 1.6s ease-in-out infinite alternate; }
+    :is(.one-dot-revolve,.one-download-ring)[data-animate=true] .one-mark { animation: one-pending-turn 1.6s linear infinite; }
+  }
+  @keyframes one-pending-sweep { to { transform: translateX(12%); } }
+  @keyframes one-pending-turn { to { transform: rotate(1turn); } }
+}

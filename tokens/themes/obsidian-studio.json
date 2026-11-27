@@ -1,0 +1,19 @@
+{
+  "id": "obsidian-studio",
+  "color": {
+    "light": {
+      "surfaceSubtle": "#f1f2f5",
+      "surfaceRaised": "#e8eaf0",
+      "borderControl": "#737680",
+      "textSecondary": "#414550"
+    },
+    "dark": {
+      "canvas": "#0c0e13",
+      "surface": "#171a22",
+      "surfaceSubtle": "#191c24",
+      "surfaceRaised": "#222632",
+      "textPrimary": "#f5f6fa",
+      "borderControl": "#898e9c"
+    }
+  }
+}

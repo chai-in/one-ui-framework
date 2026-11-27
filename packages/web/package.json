@@ -1,0 +1,42 @@
+{
+  "name": "@one-ui/web",
+  "version": "1.0.0",
+  "description": "Framework-independent One UI controls and kinetic moments.",
+  "license": "AGPL-3.0-only",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./bundle": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/one-ui-web.bundle.js"
+    },
+    "./one-primitives.css": "./dist/one-primitives.css",
+    "./one-layout.css": "./dist/one-layout.css",
+    "./one-moments.css": "./dist/one-moments.css",
+    "./one-tokens.css": "./dist/one-tokens.css"
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@one-ui/core": "1.0.0"
+  },
+  "scripts": {
+    "build": "npm run compile && node scripts/assets.mjs && esbuild dist/index.js --bundle --format=esm --target=es2022 --minify --outfile=dist/one-ui-web.bundle.js",
+    "compile": "tsc -p tsconfig.json",
+    "typecheck": "npm run compile -- --noEmit && tsc -p test/tsconfig.json",
+    "test": "node --test test/*.test.mjs",
+    "size": "node scripts/size.mjs",
+    "prepack": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "5.9.3",
+    "esbuild": "0.25.12",
+    "happy-dom": "^20.0.0"
+  }
+}
